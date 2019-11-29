@@ -1,0 +1,264 @@
+@import "common.css";
+
+:root {
+  --pages_container_width  : 1280px;
+  --pages_container_height : 825px;
+  --left_right_margin_pages : 30px;
+
+  --page-left-margin: 50px;
+  --page-right-margin: 50px;
+  --page-top-margin: 30px;
+  --page-bottom-margin: 20px;
+}
+
+#book_container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  /* position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0; */
+  background-color: #ecf0f1;
+}
+
+#go_to_table_of_content {
+  position: absolute;
+  left: 0;
+  top: 0;
+
+  /* set from javascript */
+  /* width: 2vw;
+  height: 2vw; */
+
+  cursor: pointer;
+  outline: none;
+  border: none;
+  z-index: 1;
+  background-color: #ecf0f1;
+  background-size: cover;
+  padding: 0;
+}
+#go_to_table_of_content {
+  background-image: url("../images/table_of_content.svg");
+}
+
+#btn_back_page, #btn_next_page {
+  position: absolute;
+  
+  /* set from javascript */
+  /* width: 2vw;  */
+  
+  height: 100%;
+  top: 0;
+
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  cursor: pointer;
+  z-index: 1;
+}
+#btn_back_page {
+  background-image: url("../images/back.svg");
+  left: 0;
+}
+#btn_next_page {
+  background-image: url("../images/next.svg");
+  right: 0;
+}
+.page {
+  position: relative;
+  width: calc(var(--pages_container_width) / 2);
+  height: 100%;
+  background-color: white;
+  box-sizing: border-box;
+  padding: var(--page-top-margin) var(--page-right-margin) var(--page-bottom-margin) var(--page-left-margin);
+  text-align: justify;
+}
+#pages_container .page:nth-child(odd) {
+  border-right: 1px solid rgba(0,0,0,0.1);
+}
+
+.cover_title {
+  position: absolute;
+  top: 595px;
+  left: 57px;
+  right: 0px;
+  color: #0089cd;
+  font-size: 350%;
+  text-align: center;
+  text-shadow: 1px 2px rgba(0,0,0,0.15);
+}
+
+.cover_title2 {
+  position: absolute;
+  top: 10px;
+  left: 310px;
+  right: 0px;
+  color: #0089cd;
+  font-size: 400%;
+  text-align: center;
+  text-shadow: 1px 2px rgba(0,0,0,0.85);
+}
+
+.cover_subtitle {
+  position: absolute;
+  left: 57px;
+  right: 0px;
+  bottom: 45px;
+  text-align: center;
+  color: #0089cd;
+  font-size: 220%;
+  text-shadow: 1px 2px rgba(0,0,0,0.15);
+}
+
+.chap_text {
+  position: absolute;
+  right: var(--page-right-margin);
+  top: 200px;
+  color: #0089cd;
+  font-size: 500%;
+  text-shadow: 1px 2px rgba(0,0,0,0.15);
+}
+.chap_name {
+  position: relative;
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+  left: 58px;
+  width: 582px;
+  top: 395px;
+  height: 170px;
+  color: #0089cd;
+  font-size: 250%;
+  text-shadow: 1px 2px rgba(0,0,0,0.15);
+}
+
+.page h2 {
+  color: #000099;
+  font-size: 140%;
+}
+.toc_link {
+  font-size: 95%;
+  padding: 0;
+  margin-bottom: 0.5em;
+  color: #222f3e;
+  cursor: pointer;
+  background-image: url("../images/dot.svg");
+}
+.toc_link:hover, .toc_link:hover a, .toc_link:hover .toc_number {
+  background-color: hsl(205, 87%, 90%);
+}
+.toc_link a {
+  padding-left: 1em;
+  padding-right: 0.2em;
+  background-color: white;
+  text-decoration: none;
+  color: inherit;
+}
+.toc_number {
+  background-color: white;
+  float: right;
+}
+
+.page_number {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 18px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 80%;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+   -khtml-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.footnote {
+  display: block;
+}
+.footnote::before {
+  content: attr(number);
+  position: absolute;
+  display: inline;
+  font-size: 75%;
+  left: -0;
+}
+.footnote_container {
+  position: absolute;
+  width: calc(100% - var(--page-left-margin) - var(--page-right-margin));
+  bottom: 48px;
+  font-size: 75%;
+  border-top: 2px solid #3c6382;
+  padding-left: 1em;
+}
+
+.fondo_vida {
+	 color:#000; font-size:22px; font-family: 'descartesJS_Sansserif', sans-serif; margin:25px 55px 0px 55px;  background-color: #B3FFD9; padding:10px 25px 10px 25px; border: 2px solid #B3FFD9; border-radius: 15px 15px 15px 15px;
+	}
+
+.fig{
+	color:#000;	font-size: 80%; 
+	}
+	
+.fondo_check {
+	 margin:25px 10px 0px 10px;  background-color: #FAFADE; padding:10px 15px 10px 15px; border: 2px solid #FAFADE;
+	}
+	
+.fondo_check2 {
+	 margin:25px 30px 0px 30px; background-color: #FAFADE; padding:5px 25px 5px 25px; border: 2px solid #FAFADE;
+	}
+	
+.fondo_div3 {
+	 color:#000; margin:25px 15px 0px 15px;  background-color: #CCF0F4; padding:10px 25px 10px 25px; border: 2px solid #CCF0F4;
+	}
+.sg{
+	margin:25px 35px 0px 35px; 
+	}
+.tachar
+{
+    color:#f00;	font-size:22px;  position:relative; left:-10px; 
+	}
+
+.tachar2
+{
+    color:#f33;	font-size:26px;  position:relative; left:-20px; top:-10px;
+	}
+	
+.tachar3
+{
+    color:#f33;	font-size:26px;  position:relative; left:-30px; top:-10px;
+	display: inline-block;
+	}
+
+  ol li {
+list-style-type: none;
+counter-increment: lista; /* Un nombre identificativo que te guste */
+position: relative;
+}
+
+ol li::before {
+color: brown;
+font-weight: bold;
+content: counter(lista) "-"; /* Indica el separador para tu contenido */
+left: -32px;
+position: absolute;
+text-align: right;
+width: 26px;
+}
+
+ul {
+list-style: none; /* Quitamos los marcadores */
+padding: 0; /* Quitamos el padding por defecto de la lista */
+margin-left: 10px; /* Separamos la lista de la izquierda */
+}
+
+li::before { /* Añadimos contenido antes de cada elemento de la lista */
+content: "\2022"; /* Insertamos el marcador */
+padding-right: 12px; /* Establecemos el espacio entre las viñetas y el list item */
+color: red; /* Coloreamos la viñeta */
+}

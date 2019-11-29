@@ -1,0 +1,2700 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=yes,minimal-ui">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+  <title>Libro digital interactivo</title>
+  
+  <link rel="stylesheet" type="text/css" media="screen" href="book/katex/katex.min.css" />
+  <script src="book/katex/katex.min.js"></script>
+  <script src="book/katex/auto-render.min.js"></script>
+  <script>
+  document.addEventListener("DOMContentLoaded", function() {
+    renderMathInElement(document.body, {
+      delimiters: [ {left: "$$", right: "$$", display: true}, {left: "$", right: "$", display: false}, {left: "\\[", right: "\\]", display: true}, {left: "\\(", right: "\\)", display: false} ]
+    });
+  });
+  </script>
+
+  <link rel="stylesheet" href="book/css/style.css" type="text/css">
+  <link rel="stylesheet" href="book/css/loader.css" type="text/css">
+  <script type="text/javascript" src="book/js/book.js" charset="utf-8"></script>
+  <script src="book/katex/mhchem.min.js"></script>
+</head>
+
+<body>
+  <div id="book_loader_container"><div id="book_loader"></div><image src="images/general/descartes.gif" width='202' height='74'></div>
+
+  <div id="book_container">
+    <div id="btn_back_page"></div>
+    <div id="btn_next_page"></div>
+    <button id="go_to_table_of_content"></button>
+
+    <div id="table_of_content"></div>
+
+    <div id="pages_container">
+
+      <!--  -->
+      <div class="page" style="background-color:transparent;">
+      </div>
+
+      <!--  -->
+     <div class="page" style="margin:0; padding:0; background-size:contain; background-image:url(images/general/portada_jg.png);">
+
+
+
+      </div>
+
+      <!--  -->
+      <div class="page" style="display:flex; align-items:center; justify-content:center;">
+        <a style="width:50%" target="_blank" href="http://descartes.matem.unam.mx/"><img src="images/general/logo_descartes.svg" width="100%"></a>
+      </div>
+
+      <!--  -->
+      <!-- init-page-num="true" es un parámetro que indica que a partir de esta página comienza la numeración -->
+      <!-- inicialmente los números de las páginas se numeran con numerales romanos -->
+      <!-- num="" es un parámetro que indica que esta página no lleva numeración visible -->
+      <!--  -->
+      <div class="page" style="margin:0; padding:0; background-size:contain; background-image:url(images/general/portada1_jg.png);">
+
+
+        <br style="clear:both;">
+      </div>
+
+
+      <div class="page" style="text-align:center; font-size:110%;" init-page-num="true" num="">
+		  <h2>FICHA TÉCNICA DE LA ENCUESTA</h2>
+
+		  <h4 style="color: brown;"><img src="images/check.png" width="25px">Objetivo de la encuesta:</h4>
+		  <p><strong>Obtener información sobre el uso de redes sociales de estudiantes del quinto año de secundaria de la Institución Educativa "José Gálvez" - Cajabamba</strong></p>
+
+         <h4 style="color: brown;"><img src="images/check.png" width="25px">Tamaño de la muestra:</h4>
+		  <p><strong>Conformada por 156 estudiantes del quinto año de educación secundaria de la I.E. "José Gálvez" de Cajabamba.</strong></p>
+
+        <h4 style="color: brown;"><img src="images/check.png" width="25px">Instrumento de recolección de datos:</h4>
+		  <p><strong>Se diseñó un cuestionario estandarizado con preguntas cerradas.</strong></p>
+
+         <h4 style="color: brown;"><img src="images/check.png" width="25px">Fecha de aplicación del cuestionario:</h4>
+		  <p><strong>Semana del 11 al 15 de noviembre del 2019.</strong></p>
+
+
+
+      </div>
+
+
+
+
+      <!--  -->
+
+    <div class="page" num="">
+        <h2>Tabla de contenido</h2>
+
+        <!-- con esto se agregar una entrada en la tabla de contenido con el título "Prefacio" y con direccionamiento a la página 5 -->
+        <!-- onclick="goToPage(5) es la función que se encarga en realizar el direccionamiento a la página, en este caso la número 5 -->
+        <div class="toc_link" onclick="goToPage(5)">
+          <!-- El número que aparece aquí es el número que se mostrara a la derecha del título de la sección -->
+          <a>SECCIÓN "A"<span class="toc_number">4</span></a>
+        </div>
+
+		<br>
+
+        <div class="toc_link" onclick="goToPage(31)">
+          <!-- El número que aparece aquí es el número que se mostrara a la derecha del título de la sección -->
+          <a>SECCIÓN "B"<span class="toc_number">30</span></a>
+        </div>
+
+          <br>
+        <div class="toc_link" onclick="goToPage(57)">
+          <!-- El número que aparece aquí es el número que se mostrara a la derecha del título de la sección -->
+          <a>SECCIÓN "C"<span class="toc_number">55</span></a>
+        </div>
+
+         <br>
+        <div class="toc_link" onclick="goToPage(83)">
+          <!-- El número que aparece aquí es el número que se mostrara a la derecha del título de la sección -->
+          <a>SECCIÓN "D"<span class="toc_number">82</span></a>
+        </div>
+
+         <br>
+        <div class="toc_link" onclick="goToPage(109)">
+          <!-- El número que aparece aquí es el número que se mostrara a la derecha del título de la sección -->
+          <a>SECCIÓN "E"<span class="toc_number">112</span></a>
+        </div>
+
+        <br>
+        <div class="toc_link" onclick="goToPage(134)">
+          <!-- El número que aparece aquí es el número que se mostrara a la derecha del título de la sección -->
+          <a>SECCIÓN "F"<span class="toc_number">134</span></a>
+        </div>
+
+
+        <br>
+        <div class="toc_link" onclick="goToPage(161)">
+          <!-- El número que aparece aquí es el número que se mostrara a la derecha del título de la sección -->
+          <a>TODAS LAS SECCIONES<span class="toc_number">160</span></a>
+        </div>
+
+
+       <br>
+        <div class="toc_link" onclick="goToPage(186)">
+          <!-- El número que aparece aquí es el número que se mostrara a la derecha del título de la sección -->
+          <a>CONCLUSIONES GENERALES<span class="toc_number">185</span></a>
+        </div>
+
+
+        <br>
+        <div class="toc_link" onclick="goToPage(188)">
+          <!-- El número que aparece aquí es el número que se mostrara a la derecha del título de la sección -->
+          <a>AGRADECIMIENTO<span class="toc_number">187</span></a>
+        </div>
+
+                     <center>
+        <img src="images/redes.png" width="30%">
+              </center>
+		</div>
+
+      <!--  -->
+      <!-- Una página en blanco y sin numeración visible -->
+      <!--  -->
+        <div class="page" num="" ></div>
+      <!--  -->
+
+
+
+
+
+      <!--SECCION A  -->
+
+     	 <div class="page" num="" style="margin:0; padding:0; background-size:contain; background-image:url(images/general/portada_capitulos.svg);">
+
+
+        <div class="chap_text"> QUINTO </div>
+
+        <div class="chap_name">SECCIÓN "A" </div>
+
+        <br>
+        <div class="chap_name">I.E."José Gálvez"</div>
+                          <br> <br><br><br><br><br><br><br><br> <br>
+        <img src="images/general/jg1.png" height="140px" style="float:right;">
+		<br style="clear:both;">
+
+      </div>
+
+      <!--  -->
+      <!-- num-type-arabic="true" es un parámetro que indica que a partir de esta página la numeración utilizara numerales arábigos -->
+	  
+      <!-- Pregunta 1 -->
+       <div class="page" num-type-arabic="true">
+
+
+        <h1>¿Cuántas redes sociales son las que utiliza usted para comunicarse con sus amigos(as)?</h1>
+
+        <img class="image_expand" onclick="openImage(this)" src="imagenes/C_1_A.png" width="100%">
+
+
+		   <img class="image_expand" onclick="openImage(this)" src="imagenes/B_1_A.png" width="100%">
+
+
+      </div>
+
+      <!-- CONTINUA P1 -->
+     <div class="page">
+		 <br>
+
+		<img class="image_expand" onclick="openImage(this)" src="imagenes/P_1_A.png"  width="100%">
+
+
+		 <br><br>
+		 <h2 style="color: brown;"><img src="images/check.png" width="32px">INTERPRETACIÓN</h2>
+
+		 <div class="fondo_check"><h3>(a) La mayoria de los estudiantes del Quinto A utilizan 2 redes sociales.</h3>
+			 <h3>(b) El 19% de estudiantes entre hombres y mujeres utilizan 3 o más redes sociales.</h3></div>
+
+
+     </div>
+
+          <!-- Pregunta 2 -->
+		 <div class="page" >
+		   <br>
+        <h1>¿Para conectarse a su(s) redes sociales regularmente usted suele utilizar?</h1>
+
+        <img class="image_expand" onclick="openImage(this)" src="imagenes/C_2_A.png" width="100%">
+		   <br><br>
+
+		   <img class="image_expand" onclick="openImage(this)" src="imagenes/B_2_A.png" width="100%">
+
+
+      </div>
+
+      <!-- CONTINUA P2 -->
+     <div class="page">
+		 <br>
+		<img class="image_expand" onclick="openImage(this)" src="imagenes/P_2_A.png" width="100%">
+
+            <br>
+		 <h2 style="color: brown;"><img src="images/check.png" width="32px">INTERPRETACIÓN</h2>
+
+		 <div class="fondo_check"><h3>(a) La mayoría de estudiantes del Quinto A prefieren utilizar el celular para estar en las redes sociales.</h3>
+			 <h3>(b) Sólo el 4% de los estudiantes encuestados no utilizan ningún dispositivo tecnológico</h3></div>
+
+
+     </div>
+
+
+     <!-- Pregunta 3 -->
+		 <div class="page" >
+		   <br>
+        <h1> ¿Cuál es la red(es) social(es) que mas utiliza en la actualidad?</h1>
+
+        <img class="image_expand" onclick="openImage(this)" src="imagenes/C_3_A.png" width="100%">
+		   <br><br>
+
+		   <img class="image_expand" onclick="openImage(this)" src="imagenes/B_3_A.png" width="100%">
+
+
+      </div>
+
+      <!-- CONTINUA P3 -->
+     <div class="page">
+		 <br>
+		<img class="image_expand" onclick="openImage(this)" src="imagenes/P_3_A.png" width="100%">
+
+		 <br>
+		 <h2 style="color: brown;"><img src="images/check.png" width="32px">INTERPRETACIÓN</h2>
+
+		 <div class="fondo_check"><h3>(a) El WathsApp es la red social más utilizada por los estudiantesdel Quinto A, con un 77% frente a las demás redes sociales como facebook o instagram.</h3>
+			 <h3>(b) Sólo el 4% de los estudiantes encuestados utiliza la red social instagram.</h3></div>
+
+
+     </div>
+
+
+     	<!-- Pregunta 4 -->
+		 <div class="page" >
+
+        <h1> ¿Cúanto tiempo diario aproximadamente te dedicas a la navegación en redes sociales?</h1>
+
+        <img class="image_expand" onclick="openImage(this)" src="imagenes/C_4_A.png" width="100%">
+
+
+		   <img class="image_expand" onclick="openImage(this)" src="imagenes/B_4_A.png" width="100%">
+
+
+      </div>
+
+      <!-- CONTINUA P4 -->
+     <div class="page">
+
+		<img class="image_expand" onclick="openImage(this)" src="imagenes/P_4_A.png" width="100%">
+
+		 <br>
+		 <h2 style="color: brown;"><img src="images/check.png" width="32px">INTERPRETACIÓN</h2>
+
+		 <div class="fondo_check"><h3>(a) El 23% de los estudiantes de Quinto A, utilizan las redes sociales más de 4 horas.</h3>
+			 <h3>(b) La tendencia del tiempo de navegación en las redes sociales es de 1 a 2 horas destacándose con un 38% frente a los demás intérvalos de tiempo
+.</h3></div>
+
+
+     </div>
+
+
+    <!-- Pregunta 5 -->
+		 <div class="page" >
+
+        <h1> El uso que mayormente usted le da a una red(es) social(es) es para:</h1>
+
+        <img class="image_expand" onclick="openImage(this)" src="imagenes/C_5_A.png" width="100%">
+		   <br>
+
+		   <img class="image_expand" onclick="openImage(this)" src="imagenes/B_5_A.png" width="100%">
+
+
+      </div>
+
+      <!-- CONTINUA P5 -->
+     <div class="page">
+
+		<img class="image_expand" onclick="openImage(this)" src="imagenes/P_5_A.png" width="100%">
+
+		 <br>
+		 <h2 style="color: brown;"><img src="images/check.png" width="32px">INTERPRETACIÓN</h2>
+
+		 <div class="fondo_check"><h3>(a) La gran mayoria de estudiantes encuestados del Quinto A representados con un 77% denota que usa las redes sociales para comunicarse con sus amigos y familiares
+.</h3>
+			 <h3>(b) Sólo el 4% (1 estudiante) usa las redes sociales para educación.</h3></div>
+
+
+     </div>
+
+     <!-- Pregunta 6 -->
+		 <div class="page" >
+
+        <h1> ¿Si usted se encuentra estudiando y recibe un mensaje de su red social favorita, que acción realiza?</h1>
+
+        <img class="image_expand" onclick="openImage(this)" src="imagenes/C_6_A.png" width="100%">
+		   <br>
+
+		   <img class="image_expand" onclick="openImage(this)" src="imagenes/B_6_A.png" width="100%">
+
+
+      </div>
+
+      <!-- CONTINUA P6 -->
+     <div class="page">
+
+		<img class="image_expand" onclick="openImage(this)" src="imagenes/P_6_A.png" width="100%">
+
+		 <br>
+		 <h2 style="color: brown;"><img src="images/check.png" width="32px">INTERPRETACIÓN</h2>
+
+		 <div class="fondo_check"><h3>(a) La mayoría de estudiantes varones de Quinto A revisan inmediatamente un mensaje de su red social favorita aunque estén estudiando.</h3>
+			 <h3>(b) El 46% de los estudiantes de Quinto A, dan prioridad a su trabajo o estudio, cuando les llega un mensaje de su red favorita.</h3></div>
+
+
+     </div>
+
+               <!-- Pregunta 7 -->
+		 <div class="page" >
+
+        <h1> ¿Si usted se encuentra un evento familiar y recibe un mensaje de su red social favorita, que acción realiza?</h1>
+
+        <img class="image_expand" onclick="openImage(this)" src="imagenes/C_7_A.png" width="100%">
+		   <br>
+
+		   <img class="image_expand" onclick="openImage(this)" src="imagenes/B_7_A.png" width="100%">
+
+
+      </div>
+
+      <!-- CONTINUA P7 -->
+     <div class="page">
+
+		<img class="image_expand" onclick="openImage(this)" src="imagenes/P_7_A.png" width="100%">
+
+		 <br>
+		 <h2 style="color: brown;"><img src="images/check.png" width="32px">INTERPRETACIÓN</h2>
+
+		 <div class="fondo_check"><h3>(a) El 50% de los estudiantes de Quinto A revisan inmdiatamente el mensaje.</h3>
+			 <h3>(b) Observamos que hay 8 mujeres que revisan inmediatamente el mensaje, mientras que sólo 5 hombres hacen lo mismo.</h3></div>
+
+
+     </div>
+
+
+      <!-- Pregunta 8 -->
+		 <div class="page" >
+
+        <h1> ¿Cuándo revisa redes sociales en horario escolar, que tan seguido pierdes la atencion de la clase?</h1>
+
+        <img class="image_expand" onclick="openImage(this)" src="imagenes/C_8_A.png" width="100%">
+		   <br>
+
+		   <img class="image_expand" onclick="openImage(this)" src="imagenes/B_8_A.png" width="100%">
+
+
+      </div>
+
+      <!-- CONTINUA P8 -->
+     <div class="page">
+
+		<img class="image_expand" onclick="openImage(this)" src="imagenes/P_8_A.png" width="100%">
+
+		 <br>
+		 <h2 style="color: brown;"><img src="images/check.png" width="32px">INTERPRETACIÓN</h2>
+
+		 <div class="fondo_check"><h3>(a) La mayoría de estudiantes del Quinto A casi nunca pierde la atención en clase cuando revisan las redes sociales en horario escolar.</h3>
+			 <h3>(b) Observamos que hay 0 mujeres y 3 hombres que nunca revisan sus redes sociales en clase.</h3></div>
+
+
+     </div>
+
+
+    <!-- Pregunta 9 -->
+		 <div class="page" >
+
+        <h1> ¿Necesitas el apoyo de una red social, para recordar eventos importantes?</h1>
+
+        <img class="image_expand" onclick="openImage(this)" src="imagenes/C_9_A.png" width="100%">
+		   <br>
+
+		   <img class="image_expand" onclick="openImage(this)" src="imagenes/B_9_A.png" width="100%">
+
+
+      </div>
+
+      <!-- CONTINUA P9 -->
+     <div class="page">
+
+		<img class="image_expand" onclick="openImage(this)" src="imagenes/P_9_A.png" width="100%">
+
+		 <br>
+		 <h2 style="color: brown;"><img src="images/check.png" width="32px">INTERPRETACIÓN</h2>
+
+		 <div class="fondo_check"><h3>(a) La mayoría de estudiantes de Quinto A casi nunca necesitan de una red social para recordar eventos importantes.</h3>
+			 <h3>(b) Observamos que hay 3 mujeres y 4 hombres que nunca necesitan apoyo de una red social para recordar eventos importantes.</h3></div>
+
+
+     </div>
+
+
+    <!-- Pregunta 10 -->
+		 <div class="page" >
+
+        <h1> ¿Aceptas todas las solicitudes de amistad que recibes?</h1>
+
+        <img class="image_expand" onclick="openImage(this)" src="imagenes/C_10_A.png" width="100%">
+		   <br>
+
+		   <img class="image_expand" onclick="openImage(this)" src="imagenes/B_10_A.png" width="100%">
+
+
+      </div>
+
+      <!-- CONTINUA P10 -->
+     <div class="page">
+
+		<img class="image_expand" onclick="openImage(this)" src="imagenes/P_10_A.png" width="100%">
+
+		 <br>
+		 <h2 style="color: brown;"><img src="images/check.png" width="32px">INTERPRETACIÓN</h2>
+
+		 <div class="fondo_check"><h3>(a) El 73% de los estudiantes de Quinto A sólo aceptan solicitudes amistad de amigos a los que conocen en persona.</h3>
+			 <h3>(b) Observamos que hay 3 hombres que aceptan las solicitudes de amistad de personas que no conocen.</h3></div>
+
+
+     </div>
+
+
+    <!-- Pregunta 11 -->
+		 <div class="page" >
+
+        <h1> ¿Alguna vez has visto que insultan, dañan o humillan a alguien en la red social?</h1>
+
+        <img class="image_expand" onclick="openImage(this)" src="imagenes/C_11_A.png" width="100%">
+		   <br>
+
+		   <img class="image_expand" onclick="openImage(this)" src="imagenes/B_11_A.png" width="100%">
+
+
+      </div>
+
+      <!-- CONTINUA P11 -->
+     <div class="page">
+
+		<img class="image_expand" onclick="openImage(this)" src="imagenes/P_11_A.png" width="100%">
+
+		 <br>
+		 <h2 style="color: brown;"><img src="images/check.png" width="32px">INTERPRETACIÓN</h2>
+
+		 <div class="fondo_check"><h3>(a) El 46% de los estudiantes de Quinto A han sido testigos que alguna vez han insultado, dañado o humillado a alguien en una red social.</h3>
+			 <h3>(b) Observamos que hay 5 hombres que han sido testigos que muchas veces han insultado, dañado o humillado a alguien en una red social.</h3></div>
+
+
+     </div>
+
+
+    <!-- Pregunta 12 -->
+		 <div class="page" >
+
+        <h1> ¿Alguna vez te has sentido insultado o humillado en las redes sociales?</h1>
+
+        <img class="image_expand" onclick="openImage(this)" src="imagenes/C_12_A.png" width="100%">
+		   <br>
+
+		   <img class="image_expand" onclick="openImage(this)" src="imagenes/B_12_A.png" width="100%">
+
+
+      </div>
+
+      <!-- CONTINUA P12 -->
+     <div class="page">
+
+		<img class="image_expand" onclick="openImage(this)" src="imagenes/P_12_A.png" width="100%">
+
+		 <br>
+		 <h2 style="color: brown;"><img src="images/check.png" width="32px">INTERPRETACIÓN</h2>
+
+		 <div class="fondo_check"><h3>(a) Observamos un preocupante 19% de los estudiantes de Quinto A que se han sentido insultados o humillados en las redes sociales.</h3>
+			 <h3>(b) Observamos que hay 3 hombres y 2 mujeres que se han sentido insultados o humillados en las redes sociales.</h3></div>
+
+
+     </div>
+
+         <div class="page" num="" ></div>
+     	 <div class="page" num="" style="margin:0; padding:0; background-size:contain; background-image:url(images/general/portada_capitulos.svg);">
+
+
+        <div class="chap_text"> QUINTO </div>
+
+        <div class="chap_name">SECCIÓN "B" </div>
+
+        <br>
+        <div class="chap_name">I.E."José Gálvez"</div>
+                          <br> <br><br><br><br><br><br><br><br> <br>
+        <img src="images/general/jg1.png" height="140px" style="float:right;">
+		<br style="clear:both;">
+
+      </div>
+
+
+      <!-- Pregunta 1 -->
+       <div class="page" >
+
+        <h1>¿Cuántas redes sociales son las que utiliza usted para comunicarse con sus amigos(as)?</h1>
+
+        <img class="image_expand" onclick="openImage(this)" src="imagenes/C_1_B.png" width="100%">
+		   <br>
+
+		   <img class="image_expand" onclick="openImage(this)" src="imagenes/B_1_B.png" width="100%">
+
+
+      </div>
+
+      <!-- CONTINUA P1 -->
+     <div class="page">
+
+
+		<img class="image_expand" onclick="openImage(this)" src="imagenes/P_1_B.png"  width="100%">
+
+
+		 <br>
+		 <h2 style="color: brown;"><img src="images/check.png" width="32px">INTERPRETACIÓN</h2>
+
+		 <div class="fondo_check"><h3>(a) La mayoria de los estudiantes del Quinto B utilizan 2 redes sociales.</h3>
+			 <h3>(b) El 26% de estudiantes entre hombres y mujeres utilizan 3 o más redes sociales.</h3></div>
+
+
+     </div>
+
+      <!-- Pregunta 2 -->
+		 <div class="page" >
+
+        <h1>¿Para conectarse a su(s) redes sociales regularmente usted suele utilizar?</h1>
+
+        <img class="image_expand" onclick="openImage(this)" src="imagenes/C_2_B.png" width="100%">
+		   <br>
+
+		   <img class="image_expand" onclick="openImage(this)" src="imagenes/B_2_B.png" width="100%">
+
+
+      </div>
+
+      <!-- CONTINUA P2 -->
+     <div class="page">
+
+		<img class="image_expand" onclick="openImage(this)" src="imagenes/P_2_B.png" width="100%">
+
+		 <br>
+		 <h2 style="color: brown;"><img src="images/check.png" width="32px">INTERPRETACIÓN</h2>
+
+		 <div class="fondo_check"><h3>(a) La mayoría de estudiantes del Quinto B con un 82% prefieren utilizar el celular para estar en las redes sociales.</h3>
+			 <h3>(b) Sólo el 7% de los estudiantes encuestados no utilizan ningún dispositivo tecnológico</h3></div>
+
+
+     </div>
+
+
+		<!-- Pregunta 3 -->
+		 <div class="page" >
+
+        <h1> ¿Cuál es la red (es) social(es) que mas utiliza en la actualidad?</h1>
+
+        <img class="image_expand" onclick="openImage(this)" src="imagenes/C_3_B.png" width="100%">
+		   <br>
+
+		   <img class="image_expand" onclick="openImage(this)" src="imagenes/B_3_B.png" width="100%">
+
+
+      </div>
+
+      <!-- CONTINUA P3 -->
+     <div class="page">
+
+		<img class="image_expand" onclick="openImage(this)" src="imagenes/P_3_B.png" width="100%">
+
+		 <br>
+		 <h2 style="color: brown;"><img src="images/check.png" width="32px">INTERPRETACIÓN</h2>
+
+		 <div class="fondo_check"><h3>(a) El WathsApp, con un 77% es la red social más utilizada por los estudiantes del Quinto B, frente a las demás redes sociales como facebook o instagram.</h3>
+			 <h3>(b) Sólo el 4% de los estudiantes encuestados utiliza la red social instagram.</h3></div>
+
+
+     </div>
+
+    	<!-- Pregunta 4 -->
+		 <div class="page" >
+
+        <h1> ¿Cúanto tiempo diario aproximadamente te dedicas a la navegación en redes sociales?</h1>
+
+        <img class="image_expand" onclick="openImage(this)" src="imagenes/C_4_B.png" width="100%">
+		   <br>
+
+		   <img class="image_expand" onclick="openImage(this)" src="imagenes/B_4_B.png" width="100%">
+
+
+      </div>
+
+      <!-- CONTINUA P4 -->
+     <div class="page">
+
+		<img class="image_expand" onclick="openImage(this)" src="imagenes/P_4_B.png" width="100%">
+
+		 <br>
+		 <h2 style="color: brown;"><img src="images/check.png" width="32px">INTERPRETACIÓN</h2>
+
+		 <div class="fondo_check"><h3>(a) El 11% de los estudiantes de Quinto B, utilizan las redes sociales más de 4 horas.</h3>
+			 <h3>(b) La tendencia del tiempo de navegación en las redes sociales es de 2 a 4 horas destacándose con un 33% frente a los demás intérvalos de tiempo
+.</h3></div>
+
+
+     </div>
+
+
+    <!-- Pregunta 5 -->
+		 <div class="page" >
+
+        <h1> El uso que mayormente usted le da a una red(es) social(es) es para:</h1>
+
+        <img class="image_expand" onclick="openImage(this)" src="imagenes/C_5_B.png" width="100%">
+		   <br>
+
+		   <img class="image_expand" onclick="openImage(this)" src="imagenes/B_5_B.png" width="100%">
+
+
+      </div>
+
+      <!-- CONTINUA P5 -->
+     <div class="page">
+
+		<img class="image_expand" onclick="openImage(this)" src="imagenes/P_5_B.png" width="100%">
+
+		 <br>
+		 <h2 style="color: brown;"><img src="images/check.png" width="32px">INTERPRETACIÓN</h2>
+
+		 <div class="fondo_check"><h3>(a) La gran mayoria de estudiantes encuestados del Quinto B representados con un 52% denota que usa las redes sociales para comunicarse con sus amigos y familiares
+.</h3>
+			 <h3>(b) Sólo el 8% (2 estudiantes) usan las redes sociales para educación.</h3></div>
+
+
+     </div>
+
+
+    <!-- Pregunta 6 -->
+		 <div class="page" >
+
+        <h1> ¿Si usted se encuentra estudiando y recibe un mensaje de su red social favorita, que acción realiza?</h1>
+
+        <img class="image_expand" onclick="openImage(this)" src="imagenes/C_6_B.png" width="100%">
+		   <br>
+
+		   <img class="image_expand" onclick="openImage(this)" src="imagenes/B_6_B.png" width="100%">
+
+
+      </div>
+
+      <!-- CONTINUA P6 -->
+     <div class="page">
+
+		<img class="image_expand" onclick="openImage(this)" src="imagenes/P_6_B.png" width="100%">
+
+		 <br>
+		 <h2 style="color: brown;"><img src="images/check.png" width="32px">INTERPRETACIÓN</h2>
+
+		 <div class="fondo_check"><h3>(a) La mayoría de estudiantes varones de Quinto B revisan inmediatamente un mensaje de su red social favorita aunque estén estudiando.</h3>
+			 <h3>(b) El 59% de los estudiantes de Quinto B, dan prioridad a su trabajo o estudio, cuando les llega un mensaje de su red favorita.</h3></div>
+
+
+     </div>
+
+               <!-- Pregunta 7 -->
+		 <div class="page" >
+
+        <h1> ¿Si usted se encuentra un evento familiar y recibe un mensaje de su red social favorita, que acción realiza?</h1>
+
+        <img class="image_expand" onclick="openImage(this)" src="imagenes/C_7_B.png" width="100%">
+		   <br>
+
+		   <img class="image_expand" onclick="openImage(this)" src="imagenes/B_7_B.png" width="100%">
+
+
+      </div>
+
+      <!-- CONTINUA P7 -->
+     <div class="page">
+
+		<img class="image_expand" onclick="openImage(this)" src="imagenes/P_7_B.png" width="100%">
+
+		 <br>
+		 <h2 style="color: brown;"><img src="images/check.png" width="32px">INTERPRETACIÓN</h2>
+
+		 <div class="fondo_check"><h3>(a) El 74% de los estudiantes de Quinto B dan prioirdad a su familia y no revisan el mensaje de su red social.</h3>
+			 <h3>(b) Observamos que hay 4 mujeres que revisan inmediatamente el mensaje, mientras que sólo 3 hombres hacen lo mismo.</h3></div>
+
+
+     </div>
+
+
+      <!-- Pregunta 8 -->
+		 <div class="page" >
+
+        <h1> ¿Cuándo revisa redes sociales en horario escolar, que tan seguido pierdes la atencion de la clase?</h1>
+
+        <img class="image_expand" onclick="openImage(this)" src="imagenes/C_8_B.png" width="100%">
+		   <br>
+
+		   <img class="image_expand" onclick="openImage(this)" src="imagenes/B_8_B.png" width="100%">
+
+
+      </div>
+
+      <!-- CONTINUA P8 -->
+     <div class="page">
+
+		<img class="image_expand" onclick="openImage(this)" src="imagenes/P_8_B.png" width="100%">
+
+		 <br>
+		 <h2 style="color: brown;"><img src="images/check.png" width="32px">INTERPRETACIÓN</h2>
+
+		 <div class="fondo_check"><h3>(a) La mayoría de estudiantes del Quinto B casi nunca pierde la atención en clase cuando revisan las redes sociales en horario escolar.</h3>
+			 <h3>(b) Observamos que hay 2 mujeres y 1 hombre que nunca revisan sus redes sociales en clase.</h3></div>
+
+
+     </div>
+
+
+    <!-- Pregunta 9 -->
+		 <div class="page" >
+
+        <h1> ¿Necesitas el apoyo de una red social, para recordar eventos importantes?</h1>
+
+        <img class="image_expand" onclick="openImage(this)" src="imagenes/C_9_B.png" width="100%">
+		   <br>
+
+		   <img class="image_expand" onclick="openImage(this)" src="imagenes/B_9_B.png" width="100%">
+
+
+      </div>
+
+      <!-- CONTINUA P9 -->
+     <div class="page">
+
+		<img class="image_expand" onclick="openImage(this)" src="imagenes/P_9_B.png" width="100%">
+
+		 <br>
+		 <h2 style="color: brown;"><img src="images/check.png" width="32px">INTERPRETACIÓN</h2>
+
+		 <div class="fondo_check"><h3>(a) La mayoría de estudiantes de Quinto B casi nunca necesitan de una red social para recordar eventos importantes.</h3>
+			 <h3>(b) Observamos que hay 3 mujeres y 5 hombres que nunca necesitan apoyo de una red social para recordar eventos importantes.</h3></div>
+
+
+     </div>
+
+
+    <!-- Pregunta 10 -->
+		 <div class="page" >
+
+        <h1> ¿Aceptas todas las solicitudes de amistad que recibes?</h1>
+
+        <img class="image_expand" onclick="openImage(this)" src="imagenes/C_10_B.png" width="100%">
+		   <br>
+
+		   <img class="image_expand" onclick="openImage(this)" src="imagenes/B_10_B.png" width="100%">
+
+
+      </div>
+
+      <!-- CONTINUA P10 -->
+     <div class="page">
+
+		<img class="image_expand" onclick="openImage(this)" src="imagenes/P_10_B.png" width="100%">
+
+		 <br>
+		 <h2 style="color: brown;"><img src="images/check.png" width="32px">INTERPRETACIÓN</h2>
+
+		 <div class="fondo_check"><h3>(a) El 41% de los estudiantes de Quinto B sólo aceptan solicitudes amistad de amigos a los que conocen en persona.</h3>
+			 <h3>(b) Observamos que hay 4 hombres y 1 mujer que aceptan las solicitudes de amistad de personas que no conocen.</h3></div>
+
+
+     </div>
+
+
+    <!-- Pregunta 11 -->
+		 <div class="page" >
+
+        <h1> ¿Alguna vez has visto que insultan, dañan o humillan a alguien en la red social?</h1>
+
+        <img class="image_expand" onclick="openImage(this)" src="imagenes/C_11_B.png" width="100%">
+		   <br>
+
+		   <img class="image_expand" onclick="openImage(this)" src="imagenes/B_11_B.png" width="100%">
+
+
+      </div>
+
+      <!-- CONTINUA P11 -->
+     <div class="page">
+
+		<img class="image_expand" onclick="openImage(this)" src="imagenes/P_11_B.png" width="100%">
+
+		 <br>
+		 <h2 style="color: brown;"><img src="images/check.png" width="32px">INTERPRETACIÓN</h2>
+
+		 <div class="fondo_check"><h3>(a) El 37% de los estudiantes de Quinto B han sido testigos que alguna vez han insultado, dañado o humillado a alguien en una red social.</h3>
+			 <h3>(b) Observamos que hay 2 hombres y 1 mujer que han sido testigos que muchas veces han insultado, dañado o humillado a alguien en una red social.</h3></div>
+
+
+     </div>
+
+
+    <!-- Pregunta 12 -->
+		 <div class="page" >
+
+        <h1> ¿Alguna vez te has sentido insultado o humillado en las redes sociales?</h1>
+
+        <img class="image_expand" onclick="openImage(this)" src="imagenes/C_12_B.png" width="100%">
+		   <br>
+
+		   <img class="image_expand" onclick="openImage(this)" src="imagenes/B_12_B.png" width="100%">
+
+
+      </div>
+
+      <!-- CONTINUA P12 -->
+     <div class="page">
+
+		<img class="image_expand" onclick="openImage(this)" src="imagenes/P_12_B.png" width="100%">
+
+		 <br>
+		 <h2 style="color: brown;"><img src="images/check.png" width="32px">INTERPRETACIÓN</h2>
+
+		 <div class="fondo_check"><h3>(a) Observamos que un 19% de los estudiantes de Quinto B se han sentido insultados o humillados, alguna vez, en las redes sociales.</h3>
+			 <h3>(b) Observamos que hay 3 hombres y 2 mujeres que se han sentido insultados o humillados, alguna vez, en las redes sociales.</h3></div>
+
+
+     </div>
+
+
+      <div class="page" num="" ></div>
+     	<div class="page" num="" style="margin:0; padding:0; background-size:contain; background-image:url(images/general/portada_capitulos.svg);">
+
+
+        <div class="chap_text"> QUINTO </div>
+
+        <div class="chap_name">SECCIÓN "C" </div>
+
+        <br>
+        <div class="chap_name">I.E."José Gálvez"</div>
+                          <br> <br><br><br><br><br><br><br><br> <br>
+        <img src="images/general/jg1.png" height="140px" style="float:right;">
+		<br style="clear:both;">
+
+      </div>
+
+
+      <!-- Pregunta 1 -->
+       <div class="page" >
+
+        <h1>¿Cuántas redes sociales son las que utiliza usted para comunicarse con sus amigos(as)?</h1>
+
+        <img class="image_expand" onclick="openImage(this)" src="imagenes/C_1_C.png" width="100%">
+		   <br>
+
+		   <img class="image_expand" onclick="openImage(this)" src="imagenes/B_1_C.png" width="100%">
+
+
+      </div>
+
+      <!-- CONTINUA P1 -->
+     <div class="page">
+
+
+		<img class="image_expand" onclick="openImage(this)" src="imagenes/P_1_C.png"  width="100%">
+
+
+		 <br>
+		 <h2 style="color: brown;"><img src="images/check.png" width="32px">INTERPRETACIÓN</h2>
+
+		 <div class="fondo_check"><h3>(a) La mayoria de los estudiantes del Quinto C con un 56% utilizan 2 redes sociales.</h3>
+			 <h3>(b) El 11% de estudiantes entre hombres y mujeres utilizan 3 o más redes sociales.</h3></div>
+
+
+     </div>
+
+      <!-- Pregunta 2 -->
+		 <div class="page" >
+
+        <h1>¿Para conectarse a su(s) redes sociales regularmente usted suele utilizar?</h1>
+
+        <img class="image_expand" onclick="openImage(this)" src="imagenes/C_2_C.png" width="100%">
+		   <br>
+
+		   <img class="image_expand" onclick="openImage(this)" src="imagenes/B_2_C.png" width="100%">
+
+
+      </div>
+
+      <!-- CONTINUA P2 -->
+     <div class="page">
+
+		<img class="image_expand" onclick="openImage(this)" src="imagenes/P_2_C.png" width="100%">
+
+		 <br>
+		 <h2 style="color: brown;"><img src="images/check.png" width="32px">INTERPRETACIÓN</h2>
+
+		 <div class="fondo_check"><h3>(a) La mayoria de estudiantes del Quinto C con un 89% prefieren utilizar el celular para estar en las redes sociales.</h3>
+			 <h3>(b) Todos los estudiantes encuestados utilizan dispositivo tecnológico para conectarse a redes sociales</h3></div>
+
+
+     </div>
+
+
+		<!-- Pregunta 3 -->
+		 <div class="page" >
+
+        <h1> ¿Cuál es la red (es) social(es) que mas utiliza en la actualidad?</h1>
+
+        <img class="image_expand" onclick="openImage(this)" src="imagenes/C_3_C.png" width="100%">
+		   <br>
+
+		   <img class="image_expand" onclick="openImage(this)" src="imagenes/B_3_C.png" width="100%">
+
+
+      </div>
+
+      <!-- CONTINUA P3 -->
+     <div class="page">
+
+		<img class="image_expand" onclick="openImage(this)" src="imagenes/P_3_C.png" width="100%">
+
+		 <br>
+		 <h2 style="color: brown;"><img src="images/check.png" width="32px">INTERPRETACIÓN</h2>
+
+		 <div class="fondo_check"><h3>(a) El WathsApp, con un 78% es la red social más utilizada por los estudiantes del Quinto C, frente a las demás redes sociales como facebook o instagram.</h3>
+			 <h3>(b)Todos los estudiantes encuestados utiliza sólo las redes sociales  facebook y WathsApp y no el instagram.</h3></div>
+
+
+     </div>
+
+    	<!-- Pregunta 4 -->
+		 <div class="page" >
+
+        <h1> ¿Cúanto tiempo diario aproximadamente te dedicas a la navegación en redes sociales?</h1>
+
+        <img class="image_expand" onclick="openImage(this)" src="imagenes/C_4_C.png" width="100%">
+		   <br>
+
+		   <img class="image_expand" onclick="openImage(this)" src="imagenes/B_4_C.png" width="100%">
+
+
+      </div>
+
+      <!-- CONTINUA P4 -->
+     <div class="page">
+
+		<img class="image_expand" onclick="openImage(this)" src="imagenes/P_4_C.png" width="100%">
+
+		 <br>
+		 <h2 style="color: brown;"><img src="images/check.png" width="32px">INTERPRETACIÓN</h2>
+
+		 <div class="fondo_check"><h3>(a) El 22% de los estudiantes de Quinto C, utilizan las redes sociales mas de 4 horas.</h3>
+			 <h3>(b) La tendencia del tiempo de navegación en las redes sociales es de 1 a 2 horas destacándose con un 48% frente a los demás intérvalos de tiempo.</h3></div>
+
+
+     </div>
+
+
+    <!-- Pregunta 5 -->
+		 <div class="page" >
+
+        <h1> El uso que mayormente usted le da a una red(es) social(es) es para:</h1>
+
+        <img class="image_expand" onclick="openImage(this)" src="imagenes/C_5_C.png" width="100%">
+		   <br>
+
+		   <img class="image_expand" onclick="openImage(this)" src="imagenes/B_5_C.png" width="100%">
+
+
+      </div>
+
+      <!-- CONTINUA P5 -->
+     <div class="page">
+
+		<img class="image_expand" onclick="openImage(this)" src="imagenes/P_5_C.png" width="100%">
+
+		 <br>
+		 <h2 style="color: brown;"><img src="images/check.png" width="32px">INTERPRETACIÓN</h2>
+
+		 <div class="fondo_check"><h3>(a) La gran mayoria de estudiantes encuestados del Quinto C representados con un 67% denota que usa las redes sociales para comunicarse con sus amigos y familiares
+.</h3>
+			 <h3>(b) De los encuestados ningún estudiante usa las redes sociales para educación.</h3></div>
+
+
+     </div>
+
+
+    <!-- Pregunta 6 -->
+		 <div class="page" >
+
+        <h1> ¿Si usted se encuentra estudiando y recibe un mensaje de su red social favorita, que acción realiza?</h1>
+
+        <img class="image_expand" onclick="openImage(this)" src="imagenes/C_6_C.png" width="100%">
+		   <br>
+
+		   <img class="image_expand" onclick="openImage(this)" src="imagenes/B_6_C.png" width="100%">
+
+
+      </div>
+
+      <!-- CONTINUA P6 -->
+     <div class="page">
+
+		<img class="image_expand" onclick="openImage(this)" src="imagenes/P_6_C.png" width="100%">
+
+		 <br>
+		 <h2 style="color: brown;"><img src="images/check.png" width="32px">INTERPRETACIÓN</h2>
+
+		 <div class="fondo_check"><h3>(a) La mayoría de estudiantes encuestados de Quinto C dan prioridad a su trabajo o estudio antes de revisar un mensaje de su red social favorita.</h3>
+			 <h3>(b) El 48% de los estudiantes de Quinto C, revisan inmediatamente un mensaje y si pueden lo responden.</h3></div>
+
+
+     </div>
+
+               <!-- Pregunta 7 -->
+		 <div class="page" >
+
+        <h1> ¿Si usted se encuentra un evento familiar y recibe un mensaje de su red social favorita, que acción realiza?</h1>
+
+        <img class="image_expand" onclick="openImage(this)" src="imagenes/C_7_C.png" width="100%">
+		   <br>
+
+		   <img class="image_expand" onclick="openImage(this)" src="imagenes/B_7_C.png" width="100%">
+
+
+      </div>
+
+      <!-- CONTINUA P7 -->
+     <div class="page">
+		 <br>
+		<img class="image_expand" onclick="openImage(this)" src="imagenes/P_7_C.png" width="100%">
+
+		 <br>
+		 <h2 style="color: brown;"><img src="images/check.png" width="32px">INTERPRETACIÓN</h2>
+
+		 <div class="fondo_check"><h3>(a) El 74% de los estudiantes de Quinto C dan prioridad a su familia y no revisan el mensaje de su red social.</h3>
+			 <h3>(b) Observamos que hay 5 mujeres que revisan inmediatamente el mensaje, mientras que sólo 2 hombres hacen lo mismo.</h3></div>
+
+
+     </div>
+
+
+      <!-- Pregunta 8 -->
+		 <div class="page" >
+
+        <h1> ¿Cuándo revisa redes sociales en horario escolar, que tan seguido pierdes la atencion de la clase?</h1>
+
+        <img class="image_expand" onclick="openImage(this)" src="imagenes/C_8_C.png" width="100%">
+		   <br>
+
+		   <img class="image_expand" onclick="openImage(this)" src="imagenes/B_8_C.png" width="100%">
+
+
+      </div>
+
+      <!-- CONTINUA P8 -->
+     <div class="page">
+
+		<img class="image_expand" onclick="openImage(this)" src="imagenes/P_8_C.png" width="100%">
+
+		 <br>
+		 <h2 style="color: brown;"><img src="images/check.png" width="32px">INTERPRETACIÓN</h2>
+
+		 <div class="fondo_check"><h3>(a) La mayoría de estudiantes del Quinto C casi nunca pierde la atención en clase cuando revisan las redes sociales en horario escolar.</h3>
+			 <h3>(b) Observamos que hay sólo 4 hombres que nunca pierden la atención en clase por las redes sociales.</h3></div>
+
+
+     </div>
+
+
+    <!-- Pregunta 9 -->
+		 <div class="page" >
+
+        <h1> ¿Necesitas el apoyo de una red social, para recordar eventos importantes?</h1>
+
+        <img class="image_expand" onclick="openImage(this)" src="imagenes/C_9_C.png" width="100%">
+		   <br>
+
+		   <img class="image_expand" onclick="openImage(this)" src="imagenes/B_9_C.png" width="100%">
+
+
+      </div>
+
+      <!-- CONTINUA P9 -->
+     <div class="page">
+
+		<img class="image_expand" onclick="openImage(this)" src="imagenes/P_9_C.png" width="100%">
+
+		 <br>
+		 <h2 style="color: brown;"><img src="images/check.png" width="32px">INTERPRETACIÓN</h2>
+
+		 <div class="fondo_check"><h3>(a) La mayoría de estudiantes de Quinto C casi nunca necesitan de una red social para recordar eventos importantes.</h3>
+			 <h3>(b) Observamos que sólo hay 2 mujeres que nunca necesitan apoyo de una red social para recordar eventos importantes.</h3></div>
+
+
+     </div>
+
+
+    <!-- Pregunta 10 -->
+		 <div class="page" >
+
+        <h1> ¿Aceptas todas las solicitudes de amistad que recibes?</h1>
+
+        <img class="image_expand" onclick="openImage(this)" src="imagenes/C_10_C.png" width="100%">
+		   <br>
+
+		   <img class="image_expand" onclick="openImage(this)" src="imagenes/B_10_C.png" width="100%">
+
+
+      </div>
+
+      <!-- CONTINUA P10 -->
+     <div class="page">
+
+		<img class="image_expand" onclick="openImage(this)" src="imagenes/P_10_C.png" width="100%">
+
+		 <br>
+		 <h2 style="color: brown;"><img src="images/check.png" width="32px">INTERPRETACIÓN</h2>
+
+		 <div class="fondo_check"><h3>(a) El 59% de los estudiantes de Quinto C sólo aceptan solicitudes amistad de amigos a los que conocen en persona.</h3>
+			 <h3>(b) Observamos que en esta sección C ningún estudiante acepta las solicitudes de amistad de personas que no conoce.</h3></div>
+
+
+     </div>
+
+
+    <!-- Pregunta 11 -->
+		 <div class="page" >
+
+        <h1> ¿Alguna vez has visto que insultan, dañan o humillan a alguien en la red social?</h1>
+
+        <img class="image_expand" onclick="openImage(this)" src="imagenes/C_11_C.png" width="100%">
+		   <br>
+
+		   <img class="image_expand" onclick="openImage(this)" src="imagenes/B_11_C.png" width="100%">
+
+
+      </div>
+
+      <!-- CONTINUA P11 -->
+     <div class="page">
+
+		<img class="image_expand" onclick="openImage(this)" src="imagenes/P_11_C.png" width="100%">
+
+		 <br>
+		 <h2 style="color: brown;"><img src="images/check.png" width="32px">INTERPRETACIÓN</h2>
+
+		 <div class="fondo_check"><h3>(a) El 37% de los estudiantes de Quinto C han sido testigos que muchas veces han insultado, dañado o humillado a alguien en una red social.</h3>
+			 <h3>(b) Observamos que sólo hay 1 hombre y 1 mujer que nunca han sido testigos que insultan, dañan o humillan a alguien en una red social.</h3></div>
+
+
+     </div>
+
+
+    <!-- Pregunta 12 -->
+		 <div class="page" >
+
+        <h1> ¿Alguna vez te has sentido insultado o humillado en las redes sociales?</h1>
+
+        <img class="image_expand" onclick="openImage(this)" src="imagenes/C_12_C.png" width="100%">
+		   <br>
+
+		   <img class="image_expand" onclick="openImage(this)" src="imagenes/B_12_C.png" width="100%">
+
+
+      </div>
+
+      <!-- CONTINUA P12 -->
+     <div class="page">
+
+		<img class="image_expand" onclick="openImage(this)" src="imagenes/P_12_C.png" width="100%">
+
+		 <br>
+		 <h2 style="color: brown;"><img src="images/check.png" width="32px">INTERPRETACIÓN</h2>
+
+		 <div class="fondo_check"><h3>(a) Observamos que un 18% de los estudiantes de Quinto C se han sentido insultados o humillados, alguna vez, en las redes sociales.</h3>
+			 <h3>(b) Observamos que hay 1 hombre que se ha sentido insultados o humillados, muchas veces, en las redes sociales.</h3></div>
+
+
+     </div>
+
+
+     <div class="page" num="" ></div>
+     	 <div class="page" num="" style="margin:0; padding:0; background-size:contain; background-image:url(images/general/portada_capitulos.svg);">
+
+
+        <div class="chap_text"> QUINTO </div>
+
+        <div class="chap_name">SECCIÓN "D" </div>
+
+        <br>
+        <div class="chap_name">I.E."José Gálvez"</div>
+                          <br> <br><br><br><br><br><br><br><br> <br>
+        <img src="images/general/jg1.png" height="140px" style="float:right;">
+		<br style="clear:both;">
+
+      </div>
+
+
+      <!-- Pregunta 1 -->
+       <div class="page" >
+
+        <h1>¿Cuántas redes sociales son las que utiliza usted para comunicarse con sus amigos(as)?</h1>
+
+        <img class="image_expand" onclick="openImage(this)" src="imagenes/C_1_D.png" width="100%">
+		   <br>
+
+		   <img class="image_expand" onclick="openImage(this)" src="imagenes/B_1_D.png" width="100%">
+
+
+      </div>
+
+      <!-- CONTINUA P1 -->
+     <div class="page">
+
+
+		<img class="image_expand" onclick="openImage(this)" src="imagenes/P_1_D.png"  width="100%">
+
+
+		 <br>
+		 <h2 style="color: brown;"><img src="images/check.png" width="32px">INTERPRETACIÓN</h2>
+
+		 <div class="fondo_check"><h3>(a) La mayoria de los estudiantes del Quinto D con un 46% utilizan 2 redes sociales.</h3>
+			 <h3>(b) El 33% de estudiantes entre hombres y mujeres utilizan 3 o más redes sociales.</h3></div>
+
+
+     </div>
+
+      <!-- Pregunta 2 -->
+		 <div class="page" >
+
+        <h1>¿Para conectarse a su(s) redes sociales regularmente usted suele utilizar?</h1>
+
+        <img class="image_expand" onclick="openImage(this)" src="imagenes/C_2_D.png" width="100%">
+		   <br>
+
+		   <img class="image_expand" onclick="openImage(this)" src="imagenes/B_2_D.png" width="100%">
+
+
+      </div>
+
+      <!-- CONTINUA P2 -->
+     <div class="page">
+
+		<img class="image_expand" onclick="openImage(this)" src="imagenes/P_2_D.png" width="100%">
+
+		 <br>
+		 <h2 style="color: brown;"><img src="images/check.png" width="32px">INTERPRETACIÓN</h2>
+
+		 <div class="fondo_check"><h3>(a) La totalidad de estudiantes del Quinto D con un 100% prefieren utilizar el celular para estar en las redes sociales.</h3>
+			 <h3>(b) Todos los estudiantes encuestados utilizan celular para conectarse a redes sociales</h3></div>
+
+
+     </div>
+
+
+		<!-- Pregunta 3 -->
+		 <div class="page" >
+
+        <h1> ¿Cuál es la red (es) social(es) que mas utiliza en la actualidad?</h1>
+
+        <img class="image_expand" onclick="openImage(this)" src="imagenes/C_3_D.png" width="100%">
+		   <br>
+
+		   <img class="image_expand" onclick="openImage(this)" src="imagenes/B_3_D.png" width="100%">
+
+
+      </div>
+
+      <!-- CONTINUA P3 -->
+     <div class="page">
+
+		<img class="image_expand" onclick="openImage(this)" src="imagenes/P_3_D.png" width="100%">
+
+		 <br>
+		 <h2 style="color: brown;"><img src="images/check.png" width="32px">INTERPRETACIÓN</h2>
+
+		 <div class="fondo_check"><h3>(a) El WathsApp, con un 75% es la red social más utilizada por los estudiantes del Quinto D, frente a las demás redes sociales como facebook o instagram.</h3>
+			 <h3>(b)Todos los estudiantes encuestados utiliza sólo las redes sociales  facebook y WathsApp y no el instagram.</h3></div>
+
+
+     </div>
+
+    	<!-- Pregunta 4 -->
+		 <div class="page" >
+
+        <h1> ¿Cúanto tiempo diario aproximadamente te dedicas a la navegación en redes sociales?</h1>
+
+        <img class="image_expand" onclick="openImage(this)" src="imagenes/C_4_D.png" width="100%">
+		   <br>
+
+		   <img class="image_expand" onclick="openImage(this)" src="imagenes/B_4_D.png" width="100%">
+
+
+      </div>
+
+      <!-- CONTINUA P4 -->
+     <div class="page">
+
+		<img class="image_expand" onclick="openImage(this)" src="imagenes/P_4_D.png" width="100%">
+
+		 <br>
+		 <h2 style="color: brown;"><img src="images/check.png" width="32px">INTERPRETACIÓN</h2>
+
+		 <div class="fondo_check"><h3>(a) El 25% de los estudiantes de Quinto D, utilizan las redes sociales mas de 4 horas.</h3>
+			 <h3>(b) La tendencia del tiempo de navegación en las redes sociales es de 1 a 2 horas destacándose con un 38% frente a los demás intérvalos de tiempo.</h3></div>
+
+
+     </div>
+
+
+    <!-- Pregunta 5 -->
+		 <div class="page" >
+
+        <h1> El uso que mayormente usted le da a una red(es) social(es) es para:</h1>
+
+        <img class="image_expand" onclick="openImage(this)" src="imagenes/C_5_D.png" width="100%">
+		   <br>
+
+		   <img class="image_expand" onclick="openImage(this)" src="imagenes/B_5_D.png" width="100%">
+
+
+      </div>
+
+      <!-- CONTINUA P5 -->
+     <div class="page">
+
+		<img class="image_expand" onclick="openImage(this)" src="imagenes/P_5_D.png" width="100%">
+
+		 <br>
+		 <h2 style="color: brown;"><img src="images/check.png" width="32px">INTERPRETACIÓN</h2>
+
+		 <div class="fondo_check"><h3>(a) La gran mayoria de estudiantes encuestados del Quinto D representados con un 63% denota que usa las redes sociales para comunicarse con sus amigos y familiares
+.</h3>
+			 <h3>(b) De los encuestados ningún estudiante usa las redes sociales para educación.</h3></div>
+
+
+     </div>
+
+
+    <!-- Pregunta 6 -->
+		 <div class="page" >
+
+        <h1> ¿Si usted se encuentra estudiando y recibe un mensaje de su red social favorita, que acción realiza?</h1>
+
+        <img class="image_expand" onclick="openImage(this)" src="imagenes/C_6_D.png" width="100%">
+		   <br>
+
+		   <img class="image_expand" onclick="openImage(this)" src="imagenes/B_6_D.png" width="100%">
+
+
+      </div>
+
+      <!-- CONTINUA P6 -->
+     <div class="page">
+
+		<img class="image_expand" onclick="openImage(this)" src="imagenes/P_6_D.png" width="100%">
+
+		 <br>
+		 <h2 style="color: brown;"><img src="images/check.png" width="32px">INTERPRETACIÓN</h2>
+
+		 <div class="fondo_check"><h3>(a) La mayoría de estudiantes encuestados, el 67% de Quinto D, dan prioridad a su trabajo o estudio antes de revisar un mensaje de su red social favorita.</h3>
+			 <h3>(b) El 33% de los estudiantes de Quinto D, revisan inmediatamente un mensaje y si pueden lo responden.</h3></div>
+
+
+     </div>
+
+               <!-- Pregunta 7 -->
+		 <div class="page" >
+
+        <h1> ¿Si usted se encuentra un evento familiar y recibe un mensaje de su red social favorita, que acción realiza?</h1>
+
+        <img class="image_expand" onclick="openImage(this)" src="imagenes/C_7_D.png" width="100%">
+		   <br>
+
+		   <img class="image_expand" onclick="openImage(this)" src="imagenes/B_7_D.png" width="100%">
+
+
+      </div>
+
+      <!-- CONTINUA P7 -->
+     <div class="page">
+
+		<img class="image_expand" onclick="openImage(this)" src="imagenes/P_7_D.png" width="100%">
+
+		 <br>
+		 <h2 style="color: brown;"><img src="images/check.png" width="32px">INTERPRETACIÓN</h2>
+
+		 <div class="fondo_check"><h3>(a) El 63% de los estudiantes de Quinto D dan prioridad a su familia y no revisan el mensaje de su red social.</h3>
+			 <h3>(b) Observamos que hay 3 mujeres que revisan inmediatamente el mensaje, mientras que 6 hombres hacen lo mismo.</h3></div>
+
+
+     </div>
+
+
+      <!-- Pregunta 8 -->
+		 <div class="page" >
+
+        <h1> ¿Cuándo revisa redes sociales en horario escolar, que tan seguido pierdes la atencion de la clase?</h1>
+
+        <img class="image_expand" onclick="openImage(this)" src="imagenes/C_8_D.png" width="100%">
+		   <br>
+
+		   <img class="image_expand" onclick="openImage(this)" src="imagenes/B_8_D.png" width="100%">
+
+
+      </div>
+
+      <!-- CONTINUA P8 -->
+     <div class="page">
+
+		<img class="image_expand" onclick="openImage(this)" src="imagenes/P_8_D.png" width="100%">
+
+		 <br>
+		 <h2 style="color: brown;"><img src="images/check.png" width="32px">INTERPRETACIÓN</h2>
+
+		 <div class="fondo_check"><h3>(a) La mayoría de estudiantes del Quinto D casi nunca pierde la atención en clase cuando revisan las redes sociales en horario escolar.</h3>
+			 <h3>(b) Observamos que hay sólo 1 hombre y una mujer que nunca pierden la atención en clase por las redes sociales.</h3></div>
+
+
+     </div>
+
+
+    <!-- Pregunta 9 -->
+		 <div class="page" >
+
+        <h1> ¿Necesitas el apoyo de una red social, para recordar eventos importantes?</h1>
+
+        <img class="image_expand" onclick="openImage(this)" src="imagenes/C_9_D.png" width="100%">
+		   <br>
+
+		   <img class="image_expand" onclick="openImage(this)" src="imagenes/B_9_D.png" width="100%">
+
+
+      </div>
+
+      <!-- CONTINUA P9 -->
+     <div class="page">
+
+		<img class="image_expand" onclick="openImage(this)" src="imagenes/P_9_D.png" width="100%">
+
+		 <br>
+		 <h2 style="color: brown;"><img src="images/check.png" width="32px">INTERPRETACIÓN</h2>
+
+		 <div class="fondo_check"><h3>(a) La mayoría de estudiantes de Quinto D casi nunca necesitan de una red social para recordar eventos importantes.</h3>
+			 <h3>(b) Observamos que sólo hay 2 mujeres que nunca necesitan apoyo de una red social para recordar eventos importantes.</h3></div>
+
+
+     </div>
+
+
+    <!-- Pregunta 10 -->
+		 <div class="page" >
+
+        <h1> ¿Aceptas todas las solicitudes de amistad que recibes?</h1>
+
+        <img class="image_expand" onclick="openImage(this)" src="imagenes/C_10_D.png" width="100%">
+		   <br>
+
+		   <img class="image_expand" onclick="openImage(this)" src="imagenes/B_10_D.png" width="100%">
+
+
+      </div>
+
+      <!-- CONTINUA P10 -->
+     <div class="page">
+
+		<img class="image_expand" onclick="openImage(this)" src="imagenes/P_10_D.png" width="100%">
+
+		 <br>
+		 <h2 style="color: brown;"><img src="images/check.png" width="32px">INTERPRETACIÓN</h2>
+
+		 <div class="fondo_check"><h3>(a) El 62% de los estudiantes de Quinto D sólo aceptan solicitudes amistad de amigos a los que conocen en persona.</h3>
+			 <h3>(b) Observamos que en esta sección D sólo un estudiante hombre acepta las solicitudes de amistad de personas que no conoce.</h3></div>
+
+
+     </div>
+
+
+    <!-- Pregunta 11 -->
+		 <div class="page" >
+
+        <h1> ¿Alguna vez has visto que insultan, dañan o humillan a alguien en la red social?</h1>
+
+        <img class="image_expand" onclick="openImage(this)" src="imagenes/C_11_D.png" width="100%">
+		   <br>
+
+		   <img class="image_expand" onclick="openImage(this)" src="imagenes/B_11_D.png" width="100%">
+
+
+      </div>
+
+      <!-- CONTINUA P11 -->
+     <div class="page">
+
+		<img class="image_expand" onclick="openImage(this)" src="imagenes/P_11_D.png" width="100%">
+
+		 <br>
+		 <h2 style="color: brown;"><img src="images/check.png" width="32px">INTERPRETACIÓN</h2>
+
+		 <div class="fondo_check"><h3>(a) El 29% de los estudiantes de Quinto D han sido testigos que muchas veces han insultado, dañado o humillado a alguien en una red social.</h3>
+			 <h3>(b) Observamos que sólo hay 1 hombre y 2 mujeres que nunca han sido testigos que insultan, dañan o humillan a alguien en una red social.</h3></div>
+
+
+     </div>
+
+
+    <!-- Pregunta 12 -->
+		 <div class="page" >
+
+        <h1> ¿Alguna vez te has sentido insultado o humillado en las redes sociales?</h1>
+
+        <img class="image_expand" onclick="openImage(this)" src="imagenes/C_12_D.png" width="100%">
+		   <br>
+
+		   <img class="image_expand" onclick="openImage(this)" src="imagenes/B_12_D.png" width="100%">
+
+
+      </div>
+
+      <!-- CONTINUA P12 -->
+     <div class="page">
+
+		<img class="image_expand" onclick="openImage(this)" src="imagenes/P_12_D.png" width="100%">
+
+		 <br>
+		 <h2 style="color: brown;"><img src="images/check.png" width="32px">INTERPRETACIÓN</h2>
+
+		 <div class="fondo_check"><h3>(a) Observamos que un 20% de los estudiantes de Quinto D se han sentido insultados o humillados, alguna vez, en las redes sociales.</h3>
+			 <h3>(b) Observamos que ningún estudiante se ha sentido insultados o humillados, muchas veces, en las redes sociales.</h3></div>
+
+            </div>
+
+
+
+        <div class="page" num="" ></div>
+     	 <div class="page" num="" style="margin:0; padding:0; background-size:contain; background-image:url(images/general/portada_capitulos.svg);">
+
+
+        <div class="chap_text"> QUINTO </div>
+
+        <div class="chap_name">SECCIÓN "E" </div>
+
+        <br>
+        <div class="chap_name">I.E."José Gálvez"</div>
+                          <br> <br><br><br><br><br><br><br><br> <br>
+        <img src="images/general/jg1.png" height="140px" style="float:right;">
+		<br style="clear:both;">
+
+      </div>
+
+
+      <!-- Pregunta 1 -->
+       <div class="page" >
+
+        <h1>¿Cuántas redes sociales son las que utiliza usted para comunicarse con sus amigos(as)?</h1>
+
+        <img class="image_expand" onclick="openImage(this)" src="imagenes/C_1_E.png" width="100%">
+		   <br>
+
+		   <img class="image_expand" onclick="openImage(this)" src="imagenes/B_1_E.png" width="100%">
+
+
+      </div>
+
+      <!-- CONTINUA P1 -->
+     <div class="page">
+
+
+		<img class="image_expand" onclick="openImage(this)" src="imagenes/P_1_E.png"  width="100%">
+
+
+		 <br>
+		 <h2 style="color: brown;"><img src="images/check.png" width="32px">INTERPRETACIÓN</h2>
+
+		 <div class="fondo_check"><h3>(a) La mayoria de los estudiantes del Quinto E con un 62% utilizan 2 redes sociales.</h3>
+			 <h3>(b) El 19% de estudiantes entre hombres y mujeres utilizan 3 o más redes sociales.</h3></div>
+
+
+     </div>
+
+      <!-- Pregunta 2 -->
+		 <div class="page" >
+
+        <h1>¿Para conectarse a su(s) redes sociales regularmente usted suele utilizar?</h1>
+
+        <img class="image_expand" onclick="openImage(this)" src="imagenes/C_2_E.png" width="100%">
+		   <br>
+
+		   <img class="image_expand" onclick="openImage(this)" src="imagenes/B_2_E.png" width="100%">
+
+
+      </div>
+
+      <!-- CONTINUA P2 -->
+     <div class="page">
+
+		<img class="image_expand" onclick="openImage(this)" src="imagenes/P_2_E.png" width="100%">
+
+		 <br>
+		 <h2 style="color: brown;"><img src="images/check.png" width="32px">INTERPRETACIÓN</h2>
+
+		 <div class="fondo_check"><h3>(a) La mayoría de estudiantes del Quinto E con un 94% prefieren utilizar el celular para estar en las redes sociales.</h3>
+			 <h3>(b) Sólo 2 estudiantes hombres utilizan PC o Laptop para conectarse a redes sociales</h3></div>
+
+
+     </div>
+
+
+		<!-- Pregunta 3 -->
+		 <div class="page" >
+
+        <h1> ¿Cuál es la red (es) social(es) que mas utiliza en la actualidad?</h1>
+
+        <img class="image_expand" onclick="openImage(this)" src="imagenes/C_3_E.png" width="100%">
+		   <br>
+
+		   <img class="image_expand" onclick="openImage(this)" src="imagenes/B_3_E.png" width="100%">
+
+
+      </div>
+
+      <!-- CONTINUA P3 -->
+     <div class="page">
+
+		<img class="image_expand" onclick="openImage(this)" src="imagenes/P_3_E.png" width="100%">
+
+		 <br>
+		 <h2 style="color: brown;"><img src="images/check.png" width="32px">INTERPRETACIÓN</h2>
+
+		 <div class="fondo_check"><h3>(a) El WathsApp, con un 81% es la red social más utilizada por los estudiantes del Quinto E, frente a las demás redes sociales como facebook o instagram.</h3>
+			 <h3>(b)Sólo dos estudiantes hombres utilizan la red social instagram.</h3></div>
+
+
+     </div>
+
+    	<!-- Pregunta 4 -->
+		 <div class="page" >
+
+        <h1> ¿Cúanto tiempo diario aproximadamente te dedicas a la navegación en redes sociales?</h1>
+
+        <img class="image_expand" onclick="openImage(this)" src="imagenes/C_4_E.png" width="100%">
+		   <br>
+
+		   <img class="image_expand" onclick="openImage(this)" src="imagenes/B_4_E.png" width="90%">
+
+
+      </div>
+
+      <!-- CONTINUA P4 -->
+     <div class="page">
+
+		<img class="image_expand" onclick="openImage(this)" src="imagenes/P_4_E.png" width="100%">
+
+		 <br>
+		 <h2 style="color: brown;"><img src="images/check.png" width="32px">INTERPRETACIÓN</h2>
+
+		 <div class="fondo_check"><h3>(a) El 25% de los estudiantes de Quinto E, utilizan las redes sociales mas de 4 horas.</h3>
+			 <h3>(b) La tendencia del tiempo de navegación en las redes sociales es de 1 a 2 horas destacándose con un 38% frente a los demás intérvalos de tiempo.</h3></div>
+
+
+     </div>
+
+
+    <!-- Pregunta 5 -->
+		 <div class="page" >
+
+        <h1> El uso que mayormente usted le da a una red(es) social(es) es para:</h1>
+
+        <img class="image_expand" onclick="openImage(this)" src="imagenes/C_5_E.png" width="100%">
+		   <br>
+
+		   <img class="image_expand" onclick="openImage(this)" src="imagenes/B_5_E.png" width="90%">
+
+
+      </div>
+
+      <!-- CONTINUA P5 -->
+     <div class="page">
+
+		<img class="image_expand" onclick="openImage(this)" src="imagenes/P_5_E.png" width="100%">
+
+		 <br>
+         		 <h2 style="color: brown;"><img src="images/check.png" width="32px">INTERPRETACIÓN</h2>
+
+		 <div class="fondo_check"><h3>(a) La gran mayoria de estudiantes encuestados del Quinto E representados con un 63% denota que usa las redes sociales para comunicarse con sus amigos y familiares
+.</h3>
+			 <h3>(b) De los encuestados sólo dos estudiantes hombres usan las redes sociales para educación.</h3></div>
+
+
+     </div>
+
+
+    <!-- Pregunta 6 -->
+		 <div class="page" >
+
+        <h1> ¿Si usted se encuentra estudiando y recibe un mensaje de su red social favorita, que acción realiza?</h1>
+
+        <img class="image_expand" onclick="openImage(this)" src="imagenes/C_6_E.png" width="100%">
+		   <br>
+
+		   <img class="image_expand" onclick="openImage(this)" src="imagenes/B_6_E.png" width="100%">
+
+
+      </div>
+
+      <!-- CONTINUA P6 -->
+     <div class="page">
+
+		<img class="image_expand" onclick="openImage(this)" src="imagenes/P_6_E.png" width="100%">
+
+		 <br>
+		 <h2 style="color: brown;"><img src="images/check.png" width="32px">INTERPRETACIÓN</h2>
+
+		 <div class="fondo_check"><h3>(a) La mayoría de estudiantes encuestados, el 55% de Quinto E, dan prioridad a su trabajo o estudio antes de revisar un mensaje de su red social favorita.</h3>
+			 <h3>(b) El 45% de los estudiantes de Quinto E, revisan inmediatamente un mensaje y si pueden lo responden.</h3></div>
+
+
+     </div>
+
+               <!-- Pregunta 7 -->
+		 <div class="page" >
+
+        <h1> ¿Si usted se encuentra un evento familiar y recibe un mensaje de su red social favorita, que acción realiza?</h1>
+
+        <img class="image_expand" onclick="openImage(this)" src="imagenes/C_7_E.png" width="100%">
+		   <br>
+
+		   <img class="image_expand" onclick="openImage(this)" src="imagenes/B_7_E.png" width="100%">
+
+
+      </div>
+
+      <!-- CONTINUA P7 -->
+     <div class="page">
+
+		<img class="image_expand" onclick="openImage(this)" src="imagenes/P_7_E.png" width="100%">
+
+		 <br>
+		 <h2 style="color: brown;"><img src="images/check.png" width="32px">INTERPRETACIÓN</h2>
+
+		 <div class="fondo_check"><h3>(a) El 85% de los estudiantes de Quinto E dan prioridad a su familia y no revisan el mensaje de su red social.</h3>
+			 <h3>(b) Observamos que hay 2 mujeres que revisan inmediatamente el mensaje, mientras que 3 hombres hacen lo mismo.</h3></div>
+
+
+     </div>
+
+
+      <!-- Pregunta 8 -->
+		 <div class="page" >
+
+        <h1> ¿Cuándo revisa redes sociales en horario escolar, que tan seguido pierdes la atencion de la clase?</h1>
+
+        <img class="image_expand" onclick="openImage(this)" src="imagenes/C_8_E.png" width="100%">
+		   <br>
+
+		   <img class="image_expand" onclick="openImage(this)" src="imagenes/B_8_E.png" width="100%">
+
+
+      </div>
+
+      <!-- CONTINUA P8 -->
+     <div class="page">
+
+		<img class="image_expand" onclick="openImage(this)" src="imagenes/P_8_E.png" width="100%">
+
+		 <br>
+		 <h2 style="color: brown;"><img src="images/check.png" width="32px">INTERPRETACIÓN</h2>
+
+		 <div class="fondo_check"><h3>(a) La mayoría de estudiantes del Quinto E, con un 85%, casi nunca pierde la atención en clase cuando revisan las redes sociales en horario escolar.</h3>
+			 <h3>(b) Observamos que hay sólo 2 hombres que nunca pierden la atención en clase por las redes sociales.</h3></div>
+
+
+     </div>
+
+
+    <!-- Pregunta 9 -->
+		 <div class="page" >
+
+        <h1> ¿Necesitas el apoyo de una red social, para recordar eventos importantes?</h1>
+
+        <img class="image_expand" onclick="openImage(this)" src="imagenes/C_9_E.png" width="100%">
+		   <br>
+
+		   <img class="image_expand" onclick="openImage(this)" src="imagenes/B_9_E.png" width="100%">
+
+
+      </div>
+
+      <!-- CONTINUA P9 -->
+     <div class="page">
+
+		<img class="image_expand" onclick="openImage(this)" src="imagenes/P_9_E.png" width="100%">
+
+		 <br>
+		 <h2 style="color: brown;"><img src="images/check.png" width="32px">INTERPRETACIÓN</h2>
+
+		 <div class="fondo_check"><h3>(a) La mayoría de estudiantes de Quinto E casi nunca necesitan de una red social para recordar eventos importantes.</h3>
+			 <h3>(b) Observamos que sólo hay 2 hombres que nunca necesitan apoyo de una red social para recordar eventos importantes.</h3></div>
+
+
+     </div>
+
+
+    <!-- Pregunta 10 -->
+		 <div class="page" >
+
+        <h1> ¿Aceptas todas las solicitudes de amistad que recibes?</h1>
+
+        <img class="image_expand" onclick="openImage(this)" src="imagenes/C_10_E.png" width="100%">
+		   <br>
+
+		   <img class="image_expand" onclick="openImage(this)" src="imagenes/B_10_E.png" width="100%">
+
+
+      </div>
+
+      <!-- CONTINUA P10 -->
+     <div class="page">
+
+		<img class="image_expand" onclick="openImage(this)" src="imagenes/P_10_E.png" width="100%">
+
+		 <br>
+		 <h2 style="color: brown;"><img src="images/check.png" width="32px">INTERPRETACIÓN</h2>
+
+		 <div class="fondo_check"><h3>(a) El 61% de los estudiantes de Quinto E sólo aceptan solicitudes amistad de amigos a los que conocen en persona.</h3>
+			 <h3>(b) Observamos que en esta sección E sólo dos estudiantes hombres aceptan las solicitudes de amistad de personas que no conoce.</h3></div>
+
+
+     </div>
+
+
+    <!-- Pregunta 11 -->
+		 <div class="page" >
+
+        <h1> ¿Alguna vez has visto que insultan, dañan o humillan a alguien en la red social?</h1>
+
+        <img class="image_expand" onclick="openImage(this)" src="imagenes/C_11_E.png" width="100%">
+		   <br>
+
+		   <img class="image_expand" onclick="openImage(this)" src="imagenes/B_11_E.png" width="100%">
+
+
+      </div>
+
+      <!-- CONTINUA P11 -->
+     <div class="page">
+
+		<img class="image_expand" onclick="openImage(this)" src="imagenes/P_11_E.png" width="100%">
+
+		 <br>
+		 <h2 style="color: brown;"><img src="images/check.png" width="32px">INTERPRETACIÓN</h2>
+
+		 <div class="fondo_check"><h3>(a) El 13% de los estudiantes de Quinto E han sido testigos que muchas veces han insultado, dañado o humillado a alguien en una red social.</h3>
+			 <h3>(b) Observamos que sólo hay 1 hombre y 1 mujer que nunca han sido testigos que insultan, dañan o humillan a alguien en una red social.</h3></div>
+
+
+     </div>
+
+
+    <!-- Pregunta 12 -->
+		 <div class="page" >
+
+        <h1> ¿Alguna vez te has sentido insultado o humillado en las redes sociales?</h1>
+
+        <img class="image_expand" onclick="openImage(this)" src="imagenes/C_12_E.png" width="100%">
+		   <br>
+
+		   <img class="image_expand" onclick="openImage(this)" src="imagenes/B_12_E.png" width="100%">
+
+
+      </div>
+
+      <!-- CONTINUA P12 -->
+     <div class="page">
+
+		<img class="image_expand" onclick="openImage(this)" src="imagenes/P_12_E.png" width="100%">
+
+		 <br>
+		 <h2 style="color: brown;"><img src="images/check.png" width="32px">INTERPRETACIÓN</h2>
+
+		 <div class="fondo_check"><h3>(a) Observamos que un 16% de los estudiantes de Quinto E se han sentido insultados o humillados, alguna vez, en las redes sociales.</h3>
+			 <h3>(b) Observamos que ningún estudiante se ha sentido insultados o humillados, muchas veces, en las redes sociales.</h3></div>
+
+            </div>
+
+
+
+        <div class="page" num="" ></div>
+     	 <div class="page" num="" style="margin:0; padding:0; background-size:contain; background-image:url(images/general/portada_capitulos.svg);">
+
+
+        <div class="chap_text"> QUINTO </div>
+
+        <div class="chap_name">SECCIÓN "F" </div>
+
+        <br>
+        <div class="chap_name">I.E."José Gálvez"</div>
+                          <br> <br><br><br><br><br><br><br><br> <br>
+        <img src="images/general/jg1.png" height="140px" style="float:right;">
+		<br style="clear:both;">
+
+      </div>
+
+
+      <!-- Pregunta 1 -->
+       <div class="page" >
+
+        <h1>¿Cuántas redes sociales son las que utiliza usted para comunicarse con sus amigos(as)?</h1>
+
+        <img class="image_expand" onclick="openImage(this)" src="imagenes/C_1_F.png" width="100%">
+		   <br>
+
+		   <img class="image_expand" onclick="openImage(this)" src="imagenes/B_1_F.png" width="100%">
+
+
+      </div>
+
+      <!-- CONTINUA P1 -->
+     <div class="page">
+
+
+		<img class="image_expand" onclick="openImage(this)" src="imagenes/P_1_F.png"  width="100%">
+
+
+		 <br>
+		 <h2 style="color: brown;"><img src="images/check.png" width="32px">INTERPRETACIÓN</h2>
+
+		 <div class="fondo_check"><h3>(a) La mayoria de los estudiantes del Quinto F con un 52% utilizan 3 a más redes sociales.</h3>
+			 <h3>(b) Todos los estudiantes de Quinto F utilizan redes sociales.</h3></div>
+
+
+     </div>
+
+      <!-- Pregunta 2 -->
+		 <div class="page" >
+
+        <h1>¿Para conectarse a su(s) redes sociales regularmente usted suele utilizar?</h1>
+
+        <img class="image_expand" onclick="openImage(this)" src="imagenes/C_2_F.png" width="100%">
+		   <br>
+
+		   <img class="image_expand" onclick="openImage(this)" src="imagenes/B_2_F.png" width="100%">
+
+
+      </div>
+
+      <!-- CONTINUA P2 -->
+     <div class="page">
+
+		<img class="image_expand" onclick="openImage(this)" src="imagenes/P_2_F.png" width="100%">
+
+		 <br>
+		 <h2 style="color: brown;"><img src="images/check.png" width="32px">INTERPRETACIÓN</h2>
+
+		 <div class="fondo_check"><h3>(a) La totalidad de estudiantes del Quinto F utilizan el celular para estar en las redes sociales.</h3>
+			 <h3>(b) Ningún estudiante encuestado de Quinto F utiliza PC o Laptop para conectarse a redes sociales</h3></div>
+
+
+     </div>
+
+
+		<!-- Pregunta 3 -->
+		 <div class="page" >
+
+        <h1> ¿Cuál es la red (es) social(es) que mas utiliza en la actualidad?</h1>
+
+        <img class="image_expand" onclick="openImage(this)" src="imagenes/C_3_F.png" width="100%">
+		   <br>
+
+		   <img class="image_expand" onclick="openImage(this)" src="imagenes/B_3_F.png" width="100%">
+
+
+      </div>
+
+      <!-- CONTINUA P3 -->
+     <div class="page">
+
+		<img class="image_expand" onclick="openImage(this)" src="imagenes/P_3_F.png" width="100%">
+
+		 <br>
+		 <h2 style="color: brown;"><img src="images/check.png" width="32px">INTERPRETACIÓN</h2>
+
+		 <div class="fondo_check"><h3>(a) El WathsApp, con un 76% es la red social más utilizada por los estudiantes del Quinto F, frente a las demás redes sociales como facebook o instagram.</h3>
+			 <h3>(b)Sólo el 24% de los estudiantes encuestados utilizan la red social facebook y ninguno instagram.</h3></div>
+
+
+     </div>
+
+    	<!-- Pregunta 4 -->
+		 <div class="page" >
+
+        <h1> ¿Cúanto tiempo diario aproximadamente te dedicas a la navegación en redes sociales?</h1>
+
+        <img class="image_expand" onclick="openImage(this)" src="imagenes/C_4_F.png" width="100%">
+		   <br>
+
+		   <img class="image_expand" onclick="openImage(this)" src="imagenes/B_4_F.png" width="100%">
+
+
+      </div>
+
+      <!-- CONTINUA P4 -->
+     <div class="page">
+
+		<img class="image_expand" onclick="openImage(this)" src="imagenes/P_4_F.png" width="100%">
+
+		 <br>
+		 <h2 style="color: brown;"><img src="images/check.png" width="32px">INTERPRETACIÓN</h2>
+
+		 <div class="fondo_check"><h3>(a) El 25% de los estudiantes de Quinto F, utilizan las redes sociales mas de 4 horas.</h3>
+			 <h3>(b) La tendencia del tiempo de navegación en las redes sociales es de 1 a 2 horas destacándose con un 38% frente a los demás intérvalos de tiempo.</h3></div>
+
+
+     </div>
+
+
+    <!-- Pregunta 5 -->
+		 <div class="page" >
+
+        <h1> El uso que mayormente usted le da a una red(es) social(es) es para:</h1>
+
+        <img class="image_expand" onclick="openImage(this)" src="imagenes/C_5_F.png" width="100%">
+		   <br>
+
+		   <img class="image_expand" onclick="openImage(this)" src="imagenes/B_5_F.png" width="100%">
+
+
+      </div>
+
+      <!-- CONTINUA P5 -->
+     <div class="page">
+
+		<img class="image_expand" onclick="openImage(this)" src="imagenes/P_5_F.png" width="100%">
+
+		 <br>
+         		 <h2 style="color: brown;"><img src="images/check.png" width="32px">INTERPRETACIÓN</h2>
+
+		 <div class="fondo_check"><h3>(a) La gran mayoria de estudiantes encuestados del Quinto F representados con un 62% denota que usa las redes sociales para comunicarse con sus amigos y familiares
+.</h3>
+			 <h3>(b) De los encuestados sólo un estudiante hombre usa las redes sociales para educación.</h3></div>
+
+
+     </div>
+
+
+    <!-- Pregunta 6 -->
+		 <div class="page" >
+
+        <h1> ¿Si usted se encuentra estudiando y recibe un mensaje de su red social favorita, que acción realiza?</h1>
+
+        <img class="image_expand" onclick="openImage(this)" src="imagenes/C_6_F.png" width="100%">
+		   <br>
+
+		   <img class="image_expand" onclick="openImage(this)" src="imagenes/B_6_F.png" width="100%">
+
+
+      </div>
+
+      <!-- CONTINUA P6 -->
+     <div class="page">
+
+		<img class="image_expand" onclick="openImage(this)" src="imagenes/P_6_F.png" width="100%">
+
+		 <br>
+		 <h2 style="color: brown;"><img src="images/check.png" width="32px">INTERPRETACIÓN</h2>
+
+		 <div class="fondo_check"><h3>(a) La mayoría de estudiantes encuestados, el 62% de Quinto F, dan prioridad a su trabajo o estudio antes de revisar un mensaje de su red social favorita.</h3>
+			 <h3>(b) El 38% de los estudiantes de Quinto F, revisan inmediatamente un mensaje y si pueden lo responden.</h3></div>
+
+
+     </div>
+
+               <!-- Pregunta 7 -->
+		 <div class="page" >
+
+        <h1> ¿Si usted se encuentra un evento familiar y recibe un mensaje de su red social favorita, que acción realiza?</h1>
+
+        <img class="image_expand" onclick="openImage(this)" src="imagenes/C_7_F.png" width="100%">
+		   <br>
+
+		   <img class="image_expand" onclick="openImage(this)" src="imagenes/B_7_F.png" width="100%">
+
+
+      </div>
+
+      <!-- CONTINUA P7 -->
+     <div class="page">
+
+		<img class="image_expand" onclick="openImage(this)" src="imagenes/P_7_F.png" width="100%">
+
+		 <br>
+		 <h2 style="color: brown;"><img src="images/check.png" width="32px">INTERPRETACIÓN</h2>
+
+		 <div class="fondo_check"><h3>(a) El 63% de los estudiantes de Quinto F dan prioridad a su familia y no revisan el mensaje de su red social.</h3>
+			 <h3>(b) Observamos que hay 4 mujeres que revisan inmediatamente el mensaje, mientras que 4 hombres hacen lo mismo.</h3></div>
+
+
+     </div>
+
+
+      <!-- Pregunta 8 -->
+		 <div class="page" >
+
+        <h1> ¿Cuándo revisa redes sociales en horario escolar, que tan seguido pierdes la atencion de la clase?</h1>
+
+        <img class="image_expand" onclick="openImage(this)" src="imagenes/C_8_F.png" width="100%">
+		   <br>
+
+		   <img class="image_expand" onclick="openImage(this)" src="imagenes/B_8_F.png" width="100%">
+
+
+      </div>
+
+      <!-- CONTINUA P8 -->
+     <div class="page">
+
+		<img class="image_expand" onclick="openImage(this)" src="imagenes/P_8_F.png" width="100%">
+
+		 <br>
+		 <h2 style="color: brown;"><img src="images/check.png" width="32px">INTERPRETACIÓN</h2>
+
+		 <div class="fondo_check"><h3>(a) La mayoría de estudiantes del Quinto F, con un 67%, casi nunca pierde la atención en clase cuando revisan las redes sociales en horario escolar.</h3>
+			 <h3>(b) Observamos que hay sólo 2 hombres que nunca pierden la atención en clase por las redes sociales.</h3></div>
+
+
+     </div>
+
+
+    <!-- Pregunta 9 -->
+		 <div class="page" >
+
+        <h1> ¿Necesitas el apoyo de una red social, para recordar eventos importantes?</h1>
+
+        <img class="image_expand" onclick="openImage(this)" src="imagenes/C_9_F.png" width="100%">
+		   <br>
+
+		   <img class="image_expand" onclick="openImage(this)" src="imagenes/B_9_F.png" width="100%">
+
+
+      </div>
+
+      <!-- CONTINUA P9 -->
+     <div class="page">
+
+		<img class="image_expand" onclick="openImage(this)" src="imagenes/P_9_F.png" width="100%">
+
+		 <br>
+		 <h2 style="color: brown;"><img src="images/check.png" width="32px">INTERPRETACIÓN</h2>
+
+		 <div class="fondo_check"><h3>(a) La mayoría de estudiantes de Quinto F casi nunca necesitan de una red social para recordar eventos importantes.</h3>
+			 <h3>(b) Observamos que sólo hay una estudiante mujer que nunca necesita apoyo de una red social para recordar eventos importantes.</h3></div>
+
+
+     </div>
+
+
+    <!-- Pregunta 10 -->
+		 <div class="page" >
+
+        <h1> ¿Aceptas todas las solicitudes de amistad que recibes?</h1>
+
+        <img class="image_expand" onclick="openImage(this)" src="imagenes/C_10_F.png" width="100%">
+		   <br>
+
+		   <img class="image_expand" onclick="openImage(this)" src="imagenes/B_10_F.png" width="100%">
+
+
+      </div>
+
+      <!-- CONTINUA P10 -->
+     <div class="page">
+
+		<img class="image_expand" onclick="openImage(this)" src="imagenes/P_10_F.png" width="100%">
+
+		 <br>
+		 <h2 style="color: brown;"><img src="images/check.png" width="32px">INTERPRETACIÓN</h2>
+
+		 <div class="fondo_check"><h3>(a) El 52% de los estudiantes de Quinto F sólo aceptan solicitudes amistad de amigos a los que conocen en persona.</h3>
+			 <h3>(b) Observamos que en esta sección F el 29% (1 hombre y 5 mujeres) aceptan las solicitudes de amistad de personas que no conocen.</h3></div>
+
+
+     </div>
+
+
+    <!-- Pregunta 11 -->
+		 <div class="page" >
+
+        <h1> ¿Alguna vez has visto que insultan, dañan o humillan a alguien en la red social?</h1>
+
+        <img class="image_expand" onclick="openImage(this)" src="imagenes/C_11_F.png" width="100%">
+		   <br>
+
+		   <img class="image_expand" onclick="openImage(this)" src="imagenes/B_11_F.png" width="100%">
+
+
+      </div>
+
+      <!-- CONTINUA P11 -->
+     <div class="page">
+
+		<img class="image_expand" onclick="openImage(this)" src="imagenes/P_11_F.png" width="100%">
+
+		 <br>
+		 <h2 style="color: brown;"><img src="images/check.png" width="32px">INTERPRETACIÓN</h2>
+
+		 <div class="fondo_check"><h3>(a) El 9% de los estudiantes de Quinto F han sido testigos que muchas veces han insultado, dañado o humillado a alguien en una red social.</h3>
+			 <h3>(b) Observamos que sólo hay 1 mujer que nunca ha sido testigo que insultan, dañan o humillan a alguien en una red social.</h3></div>
+
+
+     </div>
+
+
+    <!-- Pregunta 12 -->
+		 <div class="page" >
+
+        <h1> ¿Alguna vez te has sentido insultado o humillado en las redes sociales?</h1>
+
+        <img class="image_expand" onclick="openImage(this)" src="imagenes/C_12_F.png" width="100%">
+		   <br>
+
+		   <img class="image_expand" onclick="openImage(this)" src="imagenes/B_12_F.png" width="100%">
+
+
+      </div>
+
+      <!-- CONTINUA P12 -->
+     <div class="page">
+
+		<img class="image_expand" onclick="openImage(this)" src="imagenes/P_12_F.png" width="100%">
+
+		 <br>
+		 <h2 style="color: brown;"><img src="images/check.png" width="32px">INTERPRETACIÓN</h2>
+
+		 <div class="fondo_check"><h3>(a) Observamos que la mayoría de estudiantes de Quinto F con un 52% nunca se han sentido insultados o humillados, alguna vez, en las redes sociales.</h3>
+			 <h3>(b) Observamos que ningún estudiante se ha sentido insultados o humillados, muchas veces, en las redes sociales.</h3></div>
+
+            </div>
+
+
+
+         <div class="page" num="" ></div>
+     	 <div class="page" num="" style="margin:0; padding:0; background-size:contain; background-image:url(images/general/portada_capitulos.svg);">
+
+
+        <div class="chap_text"> QUINTO </div>
+
+        <div class="chap_name">TODAS LAS SECCIONES </div>
+
+        <br>
+        <div class="chap_name">I.E."José Gálvez"</div>
+                          <br> <br><br><br><br><br><br><br><br> <br>
+        <img src="images/general/jg1.png" height="140px" style="float:right;">
+		<br style="clear:both;">
+
+      </div>
+
+
+      <!-- Pregunta 1 -->
+       <div class="page" >
+
+        <h1>¿Cuántas redes sociales son las que utiliza usted para comunicarse con sus amigos(as)?</h1>
+
+        <img class="image_expand" onclick="openImage(this)" src="imagenes/C_1.png" width="100%">
+		   <br>
+
+		   <img class="image_expand" onclick="openImage(this)" src="imagenes/B_1.png" width="100%">
+
+
+      </div>
+
+      <!-- CONTINUA P1 -->
+     <div class="page">
+
+
+		<img class="image_expand" onclick="openImage(this)" src="imagenes/P_1.png"  width="100%">
+
+
+		 <br>
+		 <h2 style="color: brown;"><img src="images/check.png" width="32px">INTERPRETACIÓN</h2>
+
+		 <div class="fondo_check"><h3>(a) La mayoria de los estudiantes del Quinto con un 52% utilizan 2 redes sociales.</h3>
+			 <h3>(b) El 26% de los estudiantes de Quinto utilizan 3 o más redes sociales.</h3></div>
+
+
+     </div>
+
+      <!-- Pregunta 2 -->
+		 <div class="page" >
+
+        <h1>¿Para conectarse a su(s) redes sociales regularmente usted suele utilizar?</h1>
+
+        <img class="image_expand" onclick="openImage(this)" src="imagenes/C_2.png" width="100%">
+		   <br>
+
+		   <img class="image_expand" onclick="openImage(this)" src="imagenes/B_2.png" width="100%">
+
+
+      </div>
+
+      <!-- CONTINUA P2 -->
+     <div class="page">
+
+		<img class="image_expand" onclick="openImage(this)" src="imagenes/P_2.png" width="100%">
+
+		 <br>
+		 <h2 style="color: brown;"><img src="images/check.png" width="32px">INTERPRETACIÓN</h2>
+
+		 <div class="fondo_check"><h3>(a) El 91% de estudiantes del Quinto utilizan el celular para estar en las redes sociales.</h3>
+			 <h3>(b) Sólo el 7% de estudiantes encuestados de Quinto utilizan PC o Laptop para conectarse a redes sociales</h3></div>
+
+
+     </div>
+
+
+		<!-- Pregunta 3 -->
+		 <div class="page" >
+
+        <h1> ¿Cuál es la red (es) social(es) que mas utiliza en la actualidad?</h1>
+
+        <img class="image_expand" onclick="openImage(this)" src="imagenes/C_3.png" width="100%">
+		   <br>
+
+		   <img class="image_expand" onclick="openImage(this)" src="imagenes/B_3.png" width="100%">
+
+
+      </div>
+
+      <!-- CONTINUA P3 -->
+     <div class="page">
+
+		<img class="image_expand" onclick="openImage(this)" src="imagenes/P_3.png" width="100%">
+
+		 <br>
+		 <h2 style="color: brown;"><img src="images/check.png" width="32px">INTERPRETACIÓN</h2>
+
+		 <div class="fondo_check"><h3>(a) El WathsApp, con un 76% es la red social más utilizada por los estudiantes del Quinto, frente a las demás redes sociales como facebook o instagram.</h3>
+			 <h3>(b)Sólo el 18% de los estudiantes encuestados utilizan la red social facebook y el 3% instagram.</h3></div>
+
+
+     </div>
+
+    	<!-- Pregunta 4 -->
+		 <div class="page" >
+
+        <h1> ¿Cúanto tiempo diario aproximadamente te dedicas a la navegación en redes sociales?</h1>
+
+        <img class="image_expand" onclick="openImage(this)" src="imagenes/C_4.png" width="100%">
+		   <br>
+
+		   <img class="image_expand" onclick="openImage(this)" src="imagenes/B_4.png" width="100%">
+
+
+      </div>
+
+      <!-- CONTINUA P4 -->
+     <div class="page">
+
+		<img class="image_expand" onclick="openImage(this)" src="imagenes/P_4.png" width="100%">
+
+		 <br>
+		 <h2 style="color: brown;"><img src="images/check.png" width="32px">INTERPRETACIÓN</h2>
+
+		 <div class="fondo_check"><h3>(a) El 21% de los estudiantes de Quinto utilizan las redes sociales mas de 4 horas.</h3>
+			 <h3>(b) La tendencia del tiempo de navegación en las redes sociales es de 1 a 2 horas destacándose con un 35% frente a los demás intérvalos de tiempo.</h3></div>
+
+
+     </div>
+
+
+    <!-- Pregunta 5 -->
+		 <div class="page" >
+
+        <h1> El uso que mayormente usted le da a una red(es) social(es) es para:</h1>
+
+        <img class="image_expand" onclick="openImage(this)" src="imagenes/C_5.png" width="100%">
+		   <br>
+
+		   <img class="image_expand" onclick="openImage(this)" src="imagenes/B_5.png" width="100%">
+
+
+      </div>
+
+      <!-- CONTINUA P5 -->
+     <div class="page">
+
+		<img class="image_expand" onclick="openImage(this)" src="imagenes/P_5.png" width="100%">
+
+		 <br>
+         		 <h2 style="color: brown;"><img src="images/check.png" width="32px">INTERPRETACIÓN</h2>
+
+		 <div class="fondo_check"><h3>(a) La gran mayoria de estudiantes encuestados del Quinto representados con un 64% denota que usa las redes sociales para comunicarse con sus amigos y familiares
+.</h3>
+			 <h3>(b) De los encuestados sólo el 4% usa las redes sociales para educación.</h3></div>
+
+
+     </div>
+
+
+    <!-- Pregunta 6 -->
+		 <div class="page" >
+		   <
+        <h1> ¿Si usted se encuentra estudiando y recibe un mensaje de su red social favorita, que acción realiza?</h1>
+
+        <img class="image_expand" onclick="openImage(this)" src="imagenes/C_6.png" width="100%">
+		   <br>
+
+		   <img class="image_expand" onclick="openImage(this)" src="imagenes/B_6.png" width="100%">
+
+
+      </div>
+
+      <!-- CONTINUA P6 -->
+     <div class="page">
+
+		<img class="image_expand" onclick="openImage(this)" src="imagenes/P_6.png" width="100%">
+
+		 <br>
+		 <h2 style="color: brown;"><img src="images/check.png" width="32px">INTERPRETACIÓN</h2>
+
+		 <div class="fondo_check"><h3>(a) La mayoría de estudiantes encuestados, el 59% de Quinto, dan prioridad a su trabajo o estudio antes de revisar un mensaje de su red social favorita.</h3>
+			 <h3>(b) El 41% de los estudiantes de Quinto revisan inmediatamente un mensaje y si pueden lo responden.</h3></div>
+
+
+     </div>
+
+               <!-- Pregunta 7 -->
+		 <div class="page" >
+
+        <h1> ¿Si usted se encuentra un evento familiar y recibe un mensaje de su red social favorita, que acción realiza?</h1>
+
+        <img class="image_expand" onclick="openImage(this)" src="imagenes/C_7.png" width="100%">
+		   <br>
+
+		   <img class="image_expand" onclick="openImage(this)" src="imagenes/B_7.png" width="100%">
+
+
+      </div>
+
+      <!-- CONTINUA P7 -->
+     <div class="page">
+		 <br>
+		<img class="image_expand" onclick="openImage(this)" src="imagenes/P_7.png" width="100%">
+
+		 <br>
+		 <h2 style="color: brown;"><img src="images/check.png" width="32px">INTERPRETACIÓN</h2>
+
+		 <div class="fondo_check"><h3>(a) El 70% de los estudiantes de Quinto dan prioridad a su familia y no revisan el mensaje de su red social.</h3>
+			 <h3>(b) Observamos que el 30% de los estudiantes de Quinto revisan inmediatamente el mensaje y si pueden responden.</h3></div>
+
+
+     </div>
+
+
+      <!-- Pregunta 8 -->
+		 <div class="page" >
+
+        <h1> ¿Cuándo revisa redes sociales en horario escolar, que tan seguido pierdes la atencion de la clase?</h1>
+
+        <img class="image_expand" onclick="openImage(this)" src="imagenes/C_8.png" width="100%">
+		   <br>
+
+		   <img class="image_expand" onclick="openImage(this)" src="imagenes/B_8.png" width="100%">
+
+
+      </div>
+
+      <!-- CONTINUA P8 -->
+     <div class="page">
+
+		<img class="image_expand" onclick="openImage(this)" src="imagenes/P_8.png" width="100%">
+
+		 <br>
+		 <h2 style="color: brown;"><img src="images/check.png" width="32px">INTERPRETACIÓN</h2>
+
+		 <div class="fondo_check"><h3>(a) La mayoría de estudiantes del Quinto, con un 71%, casi nunca pierde la atención en clase cuando revisan las redes sociales en horario escolar.</h3>
+			 <h3>(b) Observamos que hay un 9% de estudiantes de Quinto que nunca pierden la atención en clase por las redes sociales.</h3></div>
+
+
+     </div>
+
+
+    <!-- Pregunta 9 -->
+		 <div class="page" >
+
+        <h1> ¿Necesitas el apoyo de una red social, para recordar eventos importantes?</h1>
+
+        <img class="image_expand" onclick="openImage(this)" src="imagenes/C_9.png" width="100%">
+		   <br>
+
+		   <img class="image_expand" onclick="openImage(this)" src="imagenes/B_9.png" width="100%">
+
+
+      </div>
+
+      <!-- CONTINUA P9 -->
+     <div class="page">
+
+		<img class="image_expand" onclick="openImage(this)" src="imagenes/P_9.png" width="100%">
+
+		 <br>
+		 <h2 style="color: brown;"><img src="images/check.png" width="32px">INTERPRETACIÓN</h2>
+
+		 <div class="fondo_check"><h3>(a) La mayoría de estudiantes de Quinto, con un 54 %, casi nunca necesitan de una red social para recordar eventos importantes.</h3>
+			 <h3>(b) Observamos que sólo el 8% siempre necesitan apoyo de una red social para recordar eventos importantes.</h3></div>
+
+
+     </div>
+
+
+    <!-- Pregunta 10 -->
+		 <div class="page" >
+
+        <h1> ¿Aceptas todas las solicitudes de amistad que recibes?</h1>
+
+        <img class="image_expand" onclick="openImage(this)" src="imagenes/C_10.png" width="100%">
+		   <br>
+
+		   <img class="image_expand" onclick="openImage(this)" src="imagenes/B_10.png" width="100%">
+
+
+      </div>
+
+      <!-- CONTINUA P10 -->
+     <div class="page">
+
+		<img class="image_expand" onclick="openImage(this)" src="imagenes/P_10.png" width="100%">
+
+		 <br>
+		 <h2 style="color: brown;"><img src="images/check.png" width="32px">INTERPRETACIÓN</h2>
+
+		 <div class="fondo_check"><h3>(a) El 58% de los estudiantes de Quinto sólo aceptan solicitudes amistad de amigos a los que conocen en persona.</h3>
+			 <h3>(b) Observamos que el 11% (11 hombres y 6 mujeres) aceptan las solicitudes de amistad de personas que no conocen.</h3></div>
+
+
+     </div>
+
+
+    <!-- Pregunta 11 -->
+		 <div class="page" >
+
+        <h1> ¿Alguna vez has visto que insultan, dañan o humillan a alguien en la red social?</h1>
+
+        <img class="image_expand" onclick="openImage(this)" src="imagenes/C_11.png" width="100%">
+		   <br>
+
+		   <img class="image_expand" onclick="openImage(this)" src="imagenes/B_11.png" width="100%">
+
+
+      </div>
+
+      <!-- CONTINUA P11 -->
+     <div class="page">
+
+		<img class="image_expand" onclick="openImage(this)" src="imagenes/P_11.png" width="100%">
+
+		 <br>
+		 <h2 style="color: brown;"><img src="images/check.png" width="32px">INTERPRETACIÓN</h2>
+
+		 <div class="fondo_check"><h3>(a) El 16% de los estudiantes de Quinto han sido testigos que muchas veces han insultado, dañado o humillado a alguien en una red social.</h3>
+			 <h3>(b) Observamos que el 12% de estudiantes de Quinto nunca ha sido testigo que insultan, dañan o humillan a alguien en una red social.</h3></div>
+
+
+     </div>
+
+
+    <!-- Pregunta 12 -->
+		 <div class="page" >
+
+        <h1> ¿Alguna vez te has sentido insultado o humillado en las redes sociales?</h1>
+
+        <img class="image_expand" onclick="openImage(this)" src="imagenes/C_12.png" width="100%">
+		   <br>
+
+		   <img class="image_expand" onclick="openImage(this)" src="imagenes/B_12.png" width="100%">
+
+
+      </div>
+
+      <!-- CONTINUA P12 -->
+     <div class="page">
+
+		<img class="image_expand" onclick="openImage(this)" src="imagenes/P_12.png" width="100%">
+
+		 <br>
+		 <h2 style="color: brown;"><img src="images/check.png" width="32px">INTERPRETACIÓN</h2>
+
+		 <div class="fondo_check"><h3>(a) Observamos que la mayoría de estudiantes de Quinto con un 58% nunca se han sentido insultados o humillados, alguna vez, en las redes sociales.</h3>
+			 <h3>(b) Observamos que sólo un estudiante hombre se ha sentido insultado o humillado, muchas veces, en las redes sociales.</h3></div>
+
+            </div>
+
+        <div class="page" style="text-align:center; font-size:120%; " num="" >
+		  <h2 style="color: red;">CONCLUSIONES GENERALES</h2>
+
+         <ul style="color: blue; text-align:left; font-size:120%; font-weight:bold; line-height:140%;" >
+          <li>La mayoría de estudiantes de Quinto con un 52% utiliza dos redes sociales para comunicarse con sus amigos.
+			 </li>
+
+             <li>El celular es el artefacto tecnológico más utilizado para conectarse a sus redes sociales.  </li>
+
+             <li>El WathsApp, con 76% y el Facebook con 18% son las redes sociales más utilizadas.</li>
+
+              <li>Los estudiantes de Quinto año dedican en su mayoría, con 35%, de 1 a 2 horas diarias a la navegación de redes sociales y 26% de 3 a más horas.  </li>
+
+
+         </ul>
+      </div>
+
+      <div class="page" style="text-align:center; font-size:100%; " num="" >
+
+
+
+         <ul style="color: blue; text-align:left; font-size:130%; font-weight:bold; line-height:130%;" >
+
+
+               <li>El uso que mayormente le dan a las redes sociales es para comunicarse con amigos y/o familiares.  </li>
+
+                <li>Sólo el 4% de los estudiantes usa las redes sociales en educación. </li>
+
+                 <li>La mayoría de estudiantes de Quinto sólo acepta amigos en las redes sociales si ya los conoce en persona, pero hay un 11% que lo hace sin saber quien es la persona que solicita la amistad. </li>
+
+                  <li>Hay un 44% de estudiantes que por lo menos alguna vez han visto que insultan, dañan o humillan a alguien en la red social.  </li>
+
+                  <li>Hay un 16% de estudiantes que alguna vez se han sentido insultados, dañados o humillados por alguien en la red social. </li>
+         </ul>
+      </div>
+
+
+       <div class="page" num="">
+
+                          <br> <br><br><br><br><br><br>
+		 <img src="imagenes/agrad.png" width="100%" >
+
+
+      </div>
+
+    <div class="page" style="display:flex; align-items:center; justify-content:center;">
+        <a style="width:50%" target="_blank" href="http://descartes.matem.unam.mx/"><img src="images/general/logo_descartes.svg" width="100%"></a>
+      </div>
+
+    <!-- [cierra] pages_container -->
+    </div>
+  <!-- [cierra] book_container -->
+  </div>
+
+</body>
+</html>
